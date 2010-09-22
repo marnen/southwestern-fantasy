@@ -75,7 +75,6 @@ staffHarp = \new PianoStaff {
 
 \score {
 	<<
-    \set harmonicDots = ##t
 	  \new StaffGroup <<
       \staffFlute
       \staffClarinet

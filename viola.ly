@@ -1,6 +1,7 @@
 \version "2.13.26"
 
 violaNotes = {
+  \set harmonicDots = ##t
   \key g \major
     
   % MS p. 1
