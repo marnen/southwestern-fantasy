@@ -3,7 +3,8 @@ harpNotesRight = {
 
   \relative d''' {
     % MS p. 1
-    d4\laissezVibrer\flageolet\pp r r2 | R1*2 | \time 3/4 R2.*4 |
+    d4\laissezVibrer\flageolet\pp_\markup { \harp-pedal #"---|^---" } r r2 | R1*2 |
+    \time 3/4 R2.*4 |
     \time 4/4 R1 | \time 3/4 R2. |
   }
 }
