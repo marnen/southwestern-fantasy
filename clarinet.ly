@@ -5,7 +5,7 @@ clarinetNotes = {
 
   \relative g'' {
     % MS p. 1
-    R1 | r4 \grace { g32( d' g, } ef8-. d-. r d,='-. ef'=''-. r | d-. r r4 r2 |
+    R1 | r4 \grace { g32(\pp d' g, } ef8)-. d-. r d,='-. ef'=''-. r | d-. r r4 r2 |
     \time 3/4 R1*4 |
   }
   \relative d {
