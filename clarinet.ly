@@ -1,3 +1,5 @@
+\version "2.13.26"
+
 % Clarinet in A, but these notes are entered in concert pitch.
 
 clarinetNotes = {
