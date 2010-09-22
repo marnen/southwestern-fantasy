@@ -11,6 +11,9 @@
 
 \include "english.ly"
 
+% Global definitions
+\include "globals.ly"
+
 % Include notes files for the various parts
 \include "flute.ly"
 \include "clarinet.ly"
