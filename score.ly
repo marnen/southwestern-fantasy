@@ -10,41 +10,43 @@
 
 \include "english.ly"
 
+% Include notes files for the various parts
+\include "flute.ly"
+\include "clarinet.ly"
+\include "violin.ly"
+\include "viola.ly"
+\include "harp.ly"
 
 staffFlute = \new Staff {
 	\time 4/4
 	\set Staff.instrumentName = "Flute"
 	\set Staff.midiInstrument = "flute"
-	\key g \major
 	\clef treble
   \fluteNotes
 }
 staffClarinet = \new Staff {
 	\set Staff.instrumentName = "Clarinet in A"
 	\set Staff.midiInstrument = "clarinet"
-	\transposition a,
-	\key g \major
 	\clef treble
-	\clarinetNotes
+	\transpose a, c {
+	  \clarinetNotes
+	}
 }
 staffViolin = \new Staff {
 	\set Staff.instrumentName = "Violin"
 	\set Staff.midiInstrument = "violin"
-	\key g \major
 	\clef treble
 	\violinNotes
 }
 staffViola = \new Staff {
 	\set Staff.instrumentName = "Viola"
 	\set Staff.midiInstrument = "viola"
-	\key g \major
 	\clef alto
 	\violaNotes
 }
 staffCello = \new Staff {
 	\set Staff.instrumentName = "Violoncello"
 	\set Staff.midiInstrument = "cello"
-	\key g \major
 	\clef bass
 	\celloNotes
 }
@@ -55,13 +57,11 @@ staffHarp = \new PianoStaff {
 				<<
 		\context Staff = "RH" {  % Right hand 
 			\clef treble
-			\key g \major
 			\relative c' {
 			}
 		}
 		\context Staff = "LH" {  % Left hand 			
 			\clef bass
-			\key g \major
 			\relative c {
 			}
 		}
