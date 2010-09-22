@@ -6,6 +6,7 @@
  	composer = "Marnen E. Laibow-Koser" 
  	copyright = "Copyright © 2010 Marnen E. Laibow-Koser (ASCAP). All rights reserved." 
 
+ 	meter = "Andante"
 }
 
 \include "english.ly"
