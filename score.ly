@@ -77,16 +77,17 @@ staffHarp = \new PianoStaff {
 
 \score {
 	<<
-	  \new staffGroup <<
+    \set harmonicDots = ##t
+	  \new StaffGroup <<
       \staffFlute
       \staffClarinet
     >>
-    \new staffGroup <<
+    \new StaffGroup <<
       \staffViolin
       \staffViola
       \staffCello
     >>
-		\staffHarp
+		% \staffHarp
 	>>
 	
 	\midi {
