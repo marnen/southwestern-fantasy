@@ -73,7 +73,7 @@ staffHarp = \new PianoStaff {
 \score {
 	<<
 		\staffFlute
-		\staffClarinetInBb
+		\staffClarinet
 		\staffViolin
 		\staffViola
 		\staffCello
