@@ -1,6 +1,6 @@
 \version "2.13.26"
 
-\celloNotes = {
+celloNotes = {
   \key g \major
   
   \relative b {
