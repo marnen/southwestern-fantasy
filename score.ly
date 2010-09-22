@@ -62,13 +62,11 @@ staffHarp = \new PianoStaff {
 				<<
 		\context Staff = "RH" {  % Right hand 
 			\clef treble
-			\relative c' {
-			}
+			\harpNotesRight
 		}
 		\context Staff = "LH" {  % Left hand 			
 			\clef bass
-			\relative c {
-			}
+			\harpNotesLeft
 		}
 	>>
 }
@@ -87,7 +85,7 @@ staffHarp = \new PianoStaff {
       \staffViola
       \staffCello
     >>
-		% \staffHarp
+		\staffHarp
 	>>
 	
 	\midi {
