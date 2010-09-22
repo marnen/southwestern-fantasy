@@ -1,7 +1,7 @@
 \version "2.13.26"
 
 violinNotes = {
-  \key g major
+  \key g \major
   
   \relative d''' {
     % MS p. 1

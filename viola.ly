@@ -9,7 +9,7 @@ harmonicFifth= {
 }
 
 violaNotes = {
-  \key g major
+  \key g \major
   
   \relative c' {
     % MS p. 1
