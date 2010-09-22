@@ -19,6 +19,7 @@
 \include "clarinet.ly"
 \include "violin.ly"
 \include "viola.ly"
+\include "cello.ly"
 \include "harp.ly"
 
 staffFlute = \new Staff {
