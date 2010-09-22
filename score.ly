@@ -72,11 +72,15 @@ staffHarp = \new PianoStaff {
 
 \score {
 	<<
-		\staffFlute
-		\staffClarinet
-		\staffViolin
-		\staffViola
-		\staffCello
+	  \new staffGroup <<
+      \staffFlute
+      \staffClarinet
+    >>
+    \new staffGroup <<
+      \staffViolin
+      \staffViola
+      \staffCello
+    >>
 		\staffHarp
 	>>
 	
