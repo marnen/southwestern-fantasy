@@ -1,3 +1,5 @@
+\version "2.13.26"
+
 harpNotesRight = {
   \key g \major
 
@@ -10,9 +12,9 @@ harpNotesRight = {
     R2. | \time 4/4 R1 | \time 7/8 R1*7/8 |
   }
   d''4 \relative f {
-    <f gf'>2\ppp_\markup \concat \vcenter {G \flat} <g f'>2_\markup \concat \vcenter {G \natural} |
-    <gs= ef'>4_\markup \concat \vcenter {G \sharp} <a d> r2\p r4 |
-    \time 3/4 r8_\markup \column {\concat \vcenter {B \flat} \concat \vcenter {G \flat}} \clef bass <f= gf c>4 <f= gf c> <f= gf c>8 |
+    <f gf'>2\ppp_\markup \pedalChange {Y \flat} <g f'>2_\markup \pedalChange {G \natural} |
+    <gs= ef'>4_\markup \pedalChange {G \sharp} <a d> r2\p r4 |
+    \time 3/4 r8_\markup \column {\pedalChange {B \flat} \pedalChange {G \flat}} \clef bass <f= gf c>4 <f= gf c> <f= gf c>8 |
   }
 }
 
