@@ -94,6 +94,7 @@ staffHarp = \new PianoStaff {
     \context {
       \Staff
       extraNatural = ##f
+      \override TimeSignature #'style = #'numbered
     }
   }
 }
