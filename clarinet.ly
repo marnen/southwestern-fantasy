@@ -16,10 +16,14 @@ clarinetNotes = {
     d2. | \time 4/4 r4 d~\pp d8 ef-- g-- ef-- | \time 7/8 d-- r r4 r r8 |
     \time 5/4 r4 f=2\ppp( g | gs4 a) r2 r4 |
   }
-  \relative f {
-    r16 f( gf c f gf c='' gf f c gf f) |
-    r ff=( bf ef ef'='' bf ff ef bf ef, ff ef=) |
-    r d=(\< g c d g c e!='' c g e c) |
+  \transpose f es { % get rid of double-flats in transposed part
+    \relative f {
+      r16 f( gf c f gf c='' gf f c gf f) |
+      r ff!=( bf ef ef'='' bf ff ef bf ef, ff ef=) |
+    }
+  }
+  \relative d {
+    r d!=(\< g! c d g c e='' c g e c) |
     \time 7/8 \set beatStructure = #'(2 2 3) r cs,=( fs b cs fs b e='' b fs e b fs cs=) |
   }
   \relative g' {
