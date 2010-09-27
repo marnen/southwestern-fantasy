@@ -91,6 +91,10 @@ staffHarp = \new PianoStaff {
 	}
 
   \layout {
+    \context {
+      \Staff
+      extraNatural = ##f
+    }
   }
 }
 
