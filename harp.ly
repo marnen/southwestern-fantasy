@@ -32,10 +32,10 @@ harpNotesRight = {
     \time 4/4 r8 <g c ef g>--\arpeggio <b ef g b>--\arpeggio <c ef g c>--\arpeggio <d g b d>4\arpeggio r8 <g b> |
     % Some pedal changes in next bar are in LH part.
     <f='' a>4._\markup \pedalChange {F \natural} <g d'>8 <bf fs'>4._\markup \column {\pedalChange {F \sharp} \pedalChange {B \flat}} <c e!>8_\markup \pedalChange {E \natural} |
-    \time 3/4 <cs=''' d>2 r4 |
+    \time 3/4 <cs=''' d>2_\markup \pedalChange {C \sharp} r4 |
   }
   \relative f' {
-    r8 <fs a>4 <fs a> <es 'b>8_\markup \pedalChange {E \sharp}
+    r8 <fs a>4 <fs a> <es b'>8_\markup \pedalChange {E \sharp}
   }
 }
 
