@@ -75,6 +75,7 @@ staffHarp = \new PianoStaff {
 
 \score {
 	<<
+    #(set-accidental-style 'modern 'Score)
 	  \new StaffGroup <<
       \staffFlute
       \staffClarinet
