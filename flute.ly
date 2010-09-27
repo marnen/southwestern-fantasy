@@ -11,7 +11,17 @@ fluteNotes = {
     d2. | \time 4/4 R1 | \time 7/8 R8*7 |
   }
   \relative f' {
-    \time 5/4 r4 fs!2(\ppp f | ef4 d) r2 r4 | \time 3/4 R2. |
+    \time 5/4 r4 fs!2(\ppp f | ef4 d) r2 r4 |
+  }
+  \relative c'' {
+    \time 3/4 r8 c4\p c c8 | r ef4 ef ef8 | r e4\< e e8 |
+    % MS p. 3
+    \time 7/8 r8 fs!=''4 fs fs |
+    \time 4/4 r4 b=''4.\!\f g8-- b-- c-- |
+    \time 7/8 \set beatStructure = #'(4 3) d='''4. r8 r b8.\p b16 |
+    \time 4/4 c4. a4 d c8 | c8( b) r4 r b=''8. b16 | \time 3/4 b4. g8-- b-- c-- |
+    % MS p. 4
+    \time 4/4 d='''4. r8 r b4 b8 | a4. d8 fs!4. e8 | \time 3/4 d2 r4 |
   }
 }
 

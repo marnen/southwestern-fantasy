@@ -12,6 +12,12 @@ celloNotes = {
     b4. g8 b c | \time 4/4 d2. r4 |
     \time 7/8 \set beatStructure = #'(4 3) r2 b=4 b8 |
     \time 5/4 a4. d8 fs!='2 \grace { e16([ fs] } e4) | d2.. r8 fs,=8.( g16) |
-    \time 3/4 a4 a b8.( a16) | g4. r8 s4 |
+    \time 3/4 a4 a b8.( a16) | g4. r8 a8. b16 | c4\< c d8.( c16) |
+    % MS p. 3
+    \time 7/8 b=4. r8 b4 b8 | \time 4/4 b2~\!\f b8 g-- b-- c-- |
+    \time 7/8 d4. r8 d4\p d8 | \time 4/4 d4. c8 b4 \grace { a16[( b] } a4) |
+    g= r r2 | \time 3/4 \clef tenor ef'='8. ef16 ef4. c8-- |
+    % MS p. 4
+    \time 4/4 ef='8-- ef-- ef4. r8 r c~ | c d ef4. f8 g4~ | \time 3/4 g8 gs8 a='4 r | R2. |
   }
 }
