@@ -35,7 +35,14 @@ harpNotesRight = {
     \time 3/4 <cs=''' d>2_\markup \pedalChange {C \sharp} r4 |
   }
   \relative f' {
-    r8 <fs a>4 <fs a> <es b'>8_\markup \pedalChange {E \sharp}
+    r8 <fs a>4\p <fs a> <es b'>8_\markup \pedalChange {E \sharp} |
+    \time 4/4 r8 <ds g>4._\markup \pedalChange {D \sharp} r4 <f a>_\markup \pedalChange {F \natural} |
+    \time 3/4 r8 <af=' c>4_\markup \pedalChange {A \flat} <e! c'>_\markup \pedalChange {E \natural} <g=' d'>8_\markup \pedalChange {D \natural} |
+    \time 4/4 r8 <gf bf>4._\markup \column {\pedalChange {G \flat} \pedalChange {B \flat}} r4 <gf bf> |
+    % MS p. 5
+    r8 <gf=' bf> <d=' gf bf d>4~\arpeggio <d gf bf d>8 <af'=' c e>\< <bf d fs>_\markup \pedalChange {E \flat} <b ef g>_\markup \column {\pedalChange {G \natural} \pedalChange {B \natural}} |
+    <cs='' fs as>4 <cs as' cs>2.~\f\> | <cs as' cs>1 |
+    r8\!
   }
 }
 
@@ -74,6 +81,14 @@ harpNotesLeft = {
     r8 <d=' g b> <ef f a>4 r8 <es g d'>^\markup \pedalChange {E \sharp} <g bf fs'>4 |
   }
   \relative d, {
-    \time 3/4 r4 \clef bass <d d'>2 |
+    \time 3/4 r4 \clef bass <d d'>2 | R2. | \time 4/4 R1 | \time 3/4 R2. | \time 4/4 R1 |
+  }
+  \relative c' {
+    % MS p. 5
+    r2 r8 \clef treble <c e> <d fs> <ef g> | <fs as>4
+  }
+  % Middle of measure
+  \relative c, {
+    \clef bass <cs cs'>2.~ | <cs cs'>1 |
   }
 }

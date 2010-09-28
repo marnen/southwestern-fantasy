@@ -34,6 +34,13 @@ violaNotes = {
   }
   % middle of measure
   \relative a {
-    af8. g16 | fs'4 fs es8. fs16 |
+    af8.\p g16 | fs'4 fs es8. fs16 |
+    \time 4/4 ef4. r8 r f4 g8 | \time 3/4 af4 e g8. af16 |
+    \time 4/4 gf='4. r8 r fs!4 fs8 |
+    % MS p. 5
+    <<
+      { fs2~ fs8 e\< fs g | <fs as>1~\! | <fs as> }
+      { s1 | s1\f\> | s2.\mp\> s4\p }
+    >> |
   }
 }

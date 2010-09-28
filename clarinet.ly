@@ -33,6 +33,15 @@ clarinetNotes = {
   %{ middle of measure %} r8 g8.\p g16 | \time 4/4 a4. ef4 b'='' a8 |
     a( g) r4 r g8. g16 | \time 3/4 g4. ef8-- g-- a-- |
     % MS p. 4
-    \time 4/4 b4. r8 r g4 g8 | f4. g8 bf4. c8 | \time 3/4 cs2 r4
+    \time 4/4 b4. r8 r g4 g8 | f4. g8 bf4. c8 | \time 3/4 cs2 r4 | R2. |
+  }
+  \relative g'' {
+    \time 4/4 r4 \grace { g32[( d' g,] } ef8)-.\p d-. r d,-. ef'-. r |
+    \time 3/4 d=''-. r r4 r | \time 4/4 R1 |
+    % MS p. 5
+    <<
+      { r4 r8 d=''~\< d c d ef | fs g as2.~\!\f | as1 }
+      { s1 | s4 s2.\> | s2.\mp\> s4\p } 
+    >> |
   }
 }

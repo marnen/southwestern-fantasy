@@ -22,6 +22,13 @@ violinNotes = {
     \time 3/4 g8. g16 g4. ef8-- |
     % MS p. 4
     \time 4/4 g-- a-- b4. r8 r g~ | g g f4. g8 bf4~ | 
-    \time 3/4 bf8 c! cs4 \breathe fs,='8. g16 | a4 a b8. a16 |
+    \time 3/4 bf8 c! cs4 \breathe fs,='8.\p g16 | a4 a b8. a16 |
+    \time 4/4 g4. r8 r a4 b8 | \time 3/4 c4 c d8. c16 |
+    \time 4/4 bf='4. r8 r as4 as8 |
+    % MS p. 5
+    <<
+      { as2~ as8 gs\< as b | cs=''1~\! | cs }
+      { s1 | s\f\> | s2.\mp\> s4\p }
+    >> |
   }
 }

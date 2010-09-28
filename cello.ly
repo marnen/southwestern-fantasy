@@ -19,5 +19,13 @@ celloNotes = {
     g= r r2 | \time 3/4 \clef tenor ef'='8. ef16 ef4. c8-- |
     % MS p. 4
     \time 4/4 ef='8-- ef-- ef4. r8 r c~ | c d ef4. f8 g4~ | \time 3/4 g8 gs8 a='4 r | R2. |
+    \time 4/4 R1 | \time 3/4 R2. |
+  }
+  \relative f' {
+    \time 4/4 r2 r8 fs4\p fs8 |
+    % MS p. 5
+    fs8. e16 d4~ d8 c\< d ef | cs1\f\> |
+    r8 \clef bass d='-.\mp\>( cs-. cs,-.) r d'='-.( cs-. cs,-.) |
+    r8\! 
   }
 }
