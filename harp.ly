@@ -30,8 +30,10 @@ harpNotesRight = {
   \relative g' {
     \arpeggioNormal
     \time 4/4 r8 <g c ef g>--\arpeggio <b ef g b>--\arpeggio <c ef g c>--\arpeggio <d g b d>4\arpeggio r8 <g b> |
-    % Some pedal changes in next bar are in LH part.
-    <f='' a>4._\markup \pedalChange {F \natural} <g d'>8 <bf fs'>4._\markup \column {\pedalChange {F \sharp} \pedalChange {B \flat}} <c e!>8_\markup \pedalChange {E \natural} |
+    <<
+      { <f='' a>4._\markup \pedalChange {F \natural} <g d'>8 <bf fs'>4._\markup \column {\pedalChange {F \sharp} \pedalChange {B \flat}} <c e!>8_\markup \pedalChange {E \natural} }
+      { s2 s8 s4._\markup \pedalChange {E \sharp} }
+    >> |
     \time 3/4 <cs=''' d>2_\markup \pedalChange {C \sharp} r4 |
   }
   \relative f' {
@@ -78,7 +80,7 @@ harpNotesLeft = {
   \relative g {
     \arpeggioNormal
     \time 4/4 r8 \clef treble <g c ef>--\arpeggio <b ef g>\arpeggio <c ef g>--\arpeggio <d g b>4\arpeggio r |
-    r8 <d=' g b> <ef f a>4 r8 <es g d'>^\markup \pedalChange {E \sharp} <g bf fs'>4 |
+    r8 <d=' g b> <ef f a>4 r8 <es g d'> <g bf fs'>4 |
   }
   \relative d, {
     \time 3/4 r4 \clef bass <d d'>2 | R2. | \time 4/4 R1 | \time 3/4 R2. | \time 4/4 R1 |
