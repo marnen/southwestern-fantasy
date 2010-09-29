@@ -25,6 +25,7 @@ celloNotes = {
     \time 4/4 r2 r8 fs4\p fs8 |
     % MS p. 5
     fs8. e16 d4~ d8 c\< d ef | cs1\f\> |
+    \piùMosso
     r8 \clef bass d='-.\mp\>( cs-. cs,-.) r d'='-.( cs-. cs,-.) |
     r\! d=-.\p( cs-. cs,-.) r d'=-.( cs-. cs,-.) |
     \time 3/2 R1. \bar "||"

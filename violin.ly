@@ -27,7 +27,7 @@ violinNotes = {
     \time 4/4 bf='4. r8 r as4 as8 |
     % MS p. 5
     <<
-      { as2~ as8 gs\< as b | cs=''1~\! | cs }
+      { as2~ as8 gs\< as b | cs=''1~\! | \piùMosso cs }
       { s1 | s\f\> | s2.\mp\> s4\p }
     >> |
     R1 | \time 3/2 R1. \bar "||"

@@ -39,7 +39,7 @@ violaNotes = {
     \time 4/4 gf='4. r8 r fs!4 fs8 |
     % MS p. 5
     <<
-      { fs2~ fs8 e\< fs g | <fs as>1~\! | <fs as> }
+      { fs2~ fs8 e\< fs g | <fs as>1~\! | \piùMosso <fs as> }
       { s1 | s1\f\> | s2.\mp\> s4\p }
     >> |
     R1 |

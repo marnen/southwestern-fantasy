@@ -40,7 +40,7 @@ clarinetNotes = {
     \time 3/4 d=''-. r r4 r | \time 4/4 R1 |
     % MS p. 5
     <<
-      { r4 r8 d=''~\< d c d ef | fs g as2.~\!\f | as1 }
+      { r4 r8 d=''~\< d c d ef | fs g as2.~\!\f | \piùMosso as1 }
       { s1 | s4 s2.\> | s2.\mp\> s4\p } 
     >> |
     R1 |

@@ -28,7 +28,7 @@ fluteNotes = {
     \time 4/4 r4 \grace { f16[( bf16] } gf8)-.\p f!-. r f,-. gf'-. r |
     % MS p. 5
     <<
-      { r f='''-. r fs,~\< fs e f g | as='' b cs2.~\! | cs1 }
+      { r f='''-. r fs,~\< fs e f g | as='' b cs2.~\! | \piùMosso cs1 }
       { s1 | s4 s2.\f\> | s2.\mp\> s4\p }
     >> |
     R1 | \time 3/2 R1. \bar "||"

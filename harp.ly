@@ -46,7 +46,9 @@ harpNotesRight = {
     \time 4/4 r8 <gf bf>4._\markup \column {\pedalChange {G \flat} \pedalChange {B \flat}} r4 <gf bf> |
     % MS p. 5
     r8 <gf=' bf> <d=' gf bf d>4~\arpeggio <d gf bf d>8 <af'=' c e>\< <bf d fs>_\markup \pedalChange {E \flat} <b ef g>_\markup \column {\pedalChange {G \natural} \pedalChange {B \natural}} |
-    <cs='' fs as>4 <cs as' cs>2.~\f\> | <cs as' cs>1 |
+    <cs='' fs as>4 <cs as' cs>2.~\f\> | 
+    \piùMosso
+    <cs as' cs>1 |
     R1\! |
   }
   \time 3/2

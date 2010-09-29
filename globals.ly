@@ -4,7 +4,7 @@ pizz = \markup { pizz. }
 
 semprepp = \markup { \italic sempre \dynamic pp }
 
-andante = \tempo "Andante" 4 = 66
+andante = \tempo "Andante" 4 = 63
 piùMosso = \tempo "Poco più mosso" 4 = 72
 
 #(
