@@ -52,8 +52,8 @@ clarinetNotes = {
     as4-.( as-. as-. gs-.) b8.( as16 gs4) gs8.( as16) |
     b4-.( b-. b-. as-.) cs8.( b16 as4) fs8.( gs16) |
     % MS p. 6
-    as4-.( as-. as-. gs-.) b8.( as16 gs4) gs8.( as16) |
-    b4-.( b-. b-. as-.) cs8.( b16 as4) fs'='8.( gs16 |
+    as4-.( as-. as-.) as8( gs) b8.( as16 gs4) gs8.( as16) |
+    b4-.( b-. b-.) b8( as) cs8.( b16 as4) fs'='8.( gs16 |
     as4) fss-- gs-- as-- b
   }
 }
