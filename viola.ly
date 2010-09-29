@@ -54,6 +54,6 @@ violaNotes = {
     % MS p. 6
     fs4-.( fs-. fs-.) fs8( e) g8.( fs16 e4) e8.( fs16) |
     g4-.( g-. g-.) g8( fs) a8.( g16 fs4) d'='8.( e16 |
-    fs4) ds-- e-- f-- g8.( fs16 e4)
+    fs4) ds-- e-- fs-- g8.( fs16 e4)
   }
 }
