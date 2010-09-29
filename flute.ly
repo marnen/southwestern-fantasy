@@ -31,6 +31,15 @@ fluteNotes = {
       { r f='''-. r fs,~\< fs e f g | as='' b cs2.~\! | cs1 }
       { s1 | s4 s2.\f\> | s2.\mp\> s4\p }
     >> |
+    R1 | \time 3/2 R1. \bar "||"
+  }
+  
+  \relative f'' {
+    \key fs \major
+    \time 7/4
+    R1*7/4*4 |
+    % MS p. 6
+    r4 r8 fss8-.\p r gs-. r as-. r b-. r4 r |
   }
 }
 

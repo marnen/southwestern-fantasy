@@ -42,5 +42,18 @@ violaNotes = {
       { fs2~ fs8 e\< fs g | <fs as>1~\! | <fs as> }
       { s1 | s1\f\> | s2.\mp\> s4\p }
     >> |
+    R1 |
+  }
+  \relative d {
+    \time 3/2 r2 r r4 d8.(\p e16) \bar "||"
+   
+    \key fs \major
+    \time 7/4
+    fs4-.( fs-. fs-. e-.) g8.( fs16 e4) e8.( fs16) |
+    g4-.( g-. g-. f-.) a8.( g16 fs4) d8.( e16) |
+    % MS p. 6
+    fs4-.( fs-. fs-. e-.) g8.( fs16 e4) e8.( fs16) |
+    g4-.( g-. g-. f-.) a8.( g16 fs4) d'='8.( e16 |
+    fs4) ds-- e-- f-- g8.( fs16 e4)
   }
 }

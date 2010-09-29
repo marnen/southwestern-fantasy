@@ -43,5 +43,17 @@ clarinetNotes = {
       { r4 r8 d=''~\< d c d ef | fs g as2.~\!\f | as1 }
       { s1 | s4 s2.\> | s2.\mp\> s4\p } 
     >> |
+    R1 |
+  }
+  \relative f {
+    \time 3/2 r2 r r4 fs8.\p( gs16) \bar "||"
+    \key fs \major
+    \time 7/4
+    as4-.( as-. as-. gs-.) b8.( as16 gs4) gs8.( as16) |
+    b4-.( b-. b-. as-.) cs8.( b16 as4) fs8.( gs16) |
+    % MS p. 6
+    as4-.( as-. as-. gs-.) b8.( as16 gs4) gs8.( as16) |
+    b4-.( b-. b-. as-.) cs8.( b16 as4) fs'='8.( gs16 |
+    as4) fss-- gs-- as-- b
   }
 }

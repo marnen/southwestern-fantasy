@@ -30,5 +30,13 @@ violinNotes = {
       { as2~ as8 gs\< as b | cs=''1~\! | cs }
       { s1 | s\f\> | s2.\mp\> s4\p }
     >> |
+    R1 | \time 3/2 R1. \bar "||"
+  }
+  \relative d'' {
+    \key fs \major
+    \time 7/4
+    R1*7/4*4
+    % MS p. 6
+    r4 r8 ds-.^\pizz r e-. r fs-. r g-.
   }
 }

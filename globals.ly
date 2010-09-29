@@ -1,5 +1,6 @@
 \version "2.13.31"
 
+pizz = \markup { pizz. }
 
 semprepp = \markup { \italic sempre \dynamic pp }
 

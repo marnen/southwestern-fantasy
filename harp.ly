@@ -1,5 +1,8 @@
 \version "2.13.31"
 
+dcsR = { r8 d'-.([ cs'-.)] r }
+dcsL = { r8 d,-.([ cs-. cs,-.)] }
+
 harpNotesRight = {
   \key g \major
 
@@ -44,8 +47,19 @@ harpNotesRight = {
     % MS p. 5
     r8 <gf=' bf> <d=' gf bf d>4~\arpeggio <d gf bf d>8 <af'=' c e>\< <bf d fs>_\markup \pedalChange {E \flat} <b ef g>_\markup \column {\pedalChange {G \natural} \pedalChange {B \natural}} |
     <cs='' fs as>4 <cs as' cs>2.~\f\> | <cs as' cs>1 |
-    r8\!
+    R1\! |
   }
+  \time 3/2
+  <<
+    { s8 s\p s4*5 }
+    { \repeat unfold 3 \dcsR }
+  >> \bar "||"
+  
+  \key fs \major
+  \time 7/4
+  \repeat unfold 7 \dcsR | % 2 measures
+  % MS p. 6
+  \repeat unfold 7 \dcsR | % 2 measures
 }
 
 harpNotesLeft = {
@@ -91,6 +105,13 @@ harpNotesLeft = {
   }
   % Middle of measure
   \relative c, {
-    \clef bass <cs cs'>2.~ | <cs cs'>1 |
+    \clef bass <cs cs'>2.~ | <cs cs'>1 | R1 |
   }
+  \time 3/2 \repeat unfold 3 \dcsL \bar "||"
+  
+  \key fs \major
+  \time 7/4
+  \repeat unfold 7 \dcsL | % 2 measures
+  % MS p. 6
+  \repeat unfold 7 \dcsL | % 2 measures
 }
