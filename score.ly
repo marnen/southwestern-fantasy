@@ -5,8 +5,6 @@
 	title = "Fantasy on Southwestern Folk Songs" 
  	composer = "Marnen E. Laibow-Koser" 
  	copyright = "Copyright © 2010 Marnen E. Laibow-Koser (ASCAP). All rights reserved." 
-
- 	meter = "Andante"
 }
 
 \include "english.ly"
@@ -33,9 +31,14 @@ staffClarinet = \new Staff {
 	\set Staff.instrumentName = "Clarinet in A"
 	\set Staff.midiInstrument = "clarinet"
 	\clef treble
-	\transpose a, c {
-	  \clarinetNotes
-	}
+	\tag #'transposed {
+    \transpose a, c {
+      \clarinetNotes
+    }
+  }
+  \tag #'concert-pitch {
+    \clarinetNotes
+  }
 }
 staffViolin = \new Staff {
 	\set Staff.instrumentName = "Violin"
@@ -57,7 +60,7 @@ staffCello = \new Staff {
 }
 
 staffHarp = \new PianoStaff {
-	\set PianoStaff.midiInstrument = #"harp"
+	\set PianoStaff.midiInstrument = #"orchestral harp"
 	\set PianoStaff.instrumentName = #"Harp"
 				<<
 		\context Staff = "RH" {  % Right hand 
@@ -71,25 +74,33 @@ staffHarp = \new PianoStaff {
 	>>
 }
 
+basicScore = <<
+  #(set-accidental-style 'modern 'Score)
+  \andante
+  \new StaffGroup <<
+    \staffFlute
+    \staffClarinet
+  >>
+  \new StaffGroup <<
+    \staffViolin
+    \staffViola
+    \staffCello
+  >>
+  \staffHarp
+>>
 
 
 \score {
-	<<
-    #(set-accidental-style 'modern 'Score)
-	  \new StaffGroup <<
-      \staffFlute
-      \staffClarinet
-    >>
-    \new StaffGroup <<
-      \staffViolin
-      \staffViola
-      \staffCello
-    >>
-		\staffHarp
-	>>
+	\keepWithTag #'concert-pitch
+	\basicScore
 	
 	\midi {
 	}
+}
+
+\score {
+  \keepWithTag #'transposed
+  \basicScore
 
   \layout {
     \context {
