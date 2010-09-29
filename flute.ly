@@ -40,6 +40,10 @@ fluteNotes = {
     R1*7/4*4 |
     % MS p. 6
     r4 r8 fss8-.\p r gs-. r as-. r b-. r4 r |
+    \accel
+    \time 3/2 r4 r8 es,=''-.\< r fs-. r gs-. r as--\f \noBeam b8.( cs16 |
+    \agitato
+    \time 7/4 d='''4)
   }
 }
 

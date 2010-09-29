@@ -33,6 +33,12 @@ celloNotes = {
     \key fs \major
     \time 7/4
     R1*7/4*5 |
+  }
+  \relative f' {
     % MS p. 6
+    \accel
+    \time 3/2 r2 r fs8.(\f e16 ds8. cs16) |
+    \agitato
+    \time 7/4
   }
 }

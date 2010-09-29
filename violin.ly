@@ -37,6 +37,10 @@ violinNotes = {
     \time 7/4
     R1*7/4*4
     % MS p. 6
-    r4 r8 ds-.^\pizz r e-. r fs-. r g-.
+    r4 r8 ds-.^\pizz r e-. r fs-. r g-. r4 r |
+    \accel
+    \time 3/2 r4 r8 cs,=''-.\< r d-. r e-. as,='4--\f^\arco b8.( cs16 |
+    \agitato
+    \time 7/4 d=''4)
   }
 }

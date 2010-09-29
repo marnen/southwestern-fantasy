@@ -54,6 +54,10 @@ clarinetNotes = {
     % MS p. 6
     as4-.( as-. as-.) as8( gs) b8.( as16 gs4) gs8.( as16) |
     b4-.( b-. b-.) b8( as) cs8.( b16 as4) fs'='8.( gs16 |
-    as4) fss-- gs-- as-- b
+    as4) fss-- gs-- as-- b8.( as16 gs4) es8.( fs16 |
+    \accel
+    \time 3/2 gs4) es--\< fs-- gs-- as8--\f fs'=''-- \noBeam g8.( a16 |
+    \agitato
+    \time 7/4 bf=''4)
   }
 }

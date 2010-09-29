@@ -62,6 +62,16 @@ harpNotesRight = {
   \repeat unfold 7 \dcsR | % 2 measures
   % MS p. 6
   \repeat unfold 7 \dcsR | % 2 measures
+  <<
+    {
+      \transpose d' ff' { \repeat unfold 3 \dcsR } r8 d'-.[( |
+      \accel
+      \time 3/2 cs'-.]) r \dcsR \dcsR r4
+    }
+    { s8 s_\markup \pedalChange {F \flat} s4*6 | s2.. s8_\markup \pedalChange {A \natural} s2_\markup \pedalChange {F \natural} }
+  >> |
+  \agitato
+  \time 7/4
 }
 
 harpNotesLeft = {
@@ -116,4 +126,11 @@ harpNotesLeft = {
   \repeat unfold 7 \dcsL | % 2 measures
   % MS p. 6
   \repeat unfold 7 \dcsL | % 2 measures
+  \repeat unfold 5 \dcsL
+  % now in middle of 3/2 measure!
+  \relative d, {
+    #(define afterGraceFraction (cons 1 4))
+    r8 d \afterGrace cs2 { \new Voice { \override Stem #'transparent = ##t d!4 ef f g a b }} |
+  }
+  \time 7/4
 }
