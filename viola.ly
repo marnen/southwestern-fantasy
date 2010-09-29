@@ -50,7 +50,7 @@ violaNotes = {
     \key fs \major
     \time 7/4
     fs4-.( fs-. fs-. e-.) g8.( fs16 e4) e8.( fs16) |
-    g4-.( g-. g-. f-.) a8.( g16 fs4) d8.( e16) |
+    g4-.( g-. g-. fs-.) a8.( g16 fs4) d8.( e16) |
     % MS p. 6
     fs4-.( fs-. fs-.) fs8( e) g8.( fs16 e4) e8.( fs16) |
     g4-.( g-. g-.) g8( fs) a8.( g16 fs4) d'='8.( e16 |
