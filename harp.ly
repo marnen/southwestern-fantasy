@@ -91,7 +91,11 @@ harpNotesRight = {
     \tempoIo
     \key g \major
     \time 4/4
-    <c''=''' ef g b>8 r <c,='' ef g b>8.\ff q16 q4.
+    <c''=''' ef g b>8 r <c,='' ef g b>8.\ff q16 q4. <b c ef g>8-- |
+    <c ef g b>-- <ef g a c>-- <d g b d>2 <d g b>4~ |
+    % MS p. 8
+    \time 3/4 q8 q <d ef a c>4 r |
+    \time 4/4 \ottava #1 <d'=''' b' d>8 <c a' c> <b g' b>4 \ottava #0 r2 |
   }
 }
 \addQuote "rh" \harpNotesRight
@@ -199,5 +203,16 @@ harpNotesLeft = {
   
   \relative c, {
     \clef bass <c c'>2. | r4 <d, d'>8 <d' d'> <d' d'>2 |
+    \time 3/4 r4 d,=,2 \glissando |
   }
+  <<
+      { \change Staff = "RH" \hideNotes d'''4 \unHideNotes \change Staff = "LH" }
+      \new Voice {
+        r4
+      }
+  >>
+  \relative b {
+    \clef treble <b g'>8-- <c a'>-- <d b'>4 r |
+  }
+
 }
