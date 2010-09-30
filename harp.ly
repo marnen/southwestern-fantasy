@@ -68,11 +68,33 @@ harpNotesRight = {
       \accel
       \time 3/2 cs'-.]) r \dcsR \dcsR r4
     }
-    { s8 s_\markup \pedalChange {F \flat} s4*6 | s2.. s8_\markup \pedalChange {A \natural} s2_\markup \pedalChange {F \natural} }
-  >> |
+    { s8 s_\markup \pedalChange {F \flat} s4*6 | s4 s4\< s4. s8_\markup \pedalChange {A \natural} s2\f_\markup \pedalChange {F \natural} }
+  >> \bar "||"
+  
+    
   \agitato
+  \key bf \major
   \time 7/4
+  \relative b''{
+    <bf d>4--_\markup \column {\pedalChange {G \flat} \pedalChange {B \flat}} q4-- q-- <af c>--_\markup \column {\pedalChange {A \flat} \pedalChange {C \natural}} <cf ef>8.(_\markup \pedalChange {C \flat} <bf d>16 <af c>4)_\markup \pedalChange {C \natural} f,=' \glissando |
+    % MS p. 7
+    <cf''=''' ef>4--_\markup \pedalChange {C \flat} q4-- q-- <bf d>-- <df f>8.(_\markup \pedalChange {D \flat} <cf ef>16 <bf d>4)_\markup \pedalChange {D \natural} f,='_\markup \pedalChange {C \natural} \glissando |
+    <bf'='' d>4-- q4-- q-- <af c>-- <cf ef>8.(_\markup \pedalChange {C \flat} <bf d>16 <af c>4)_\markup \pedalChange {C \natural} f,=' \glissando |
+    <cf''=''' ef>4--_\markup \pedalChange {C \flat} q4-- q-- <bf d>-- <df f>8.(_\markup \pedalChange {D \flat} <cf ef>16 <bf d>4)_\markup \pedalChange {D \natural} f,='_\markup \pedalChange {C \natural} \glissando |
+    \time 4/4
+    <<
+      { <df''=''' f>4-- q-- q-- <c e>8.( <d f>16 }
+      { s4._\markup \column {\pedalChange {A \natural} \pedalChange {D \flat}} s4_\markup \pedalChange {G \natural} s8_\markup \pedalChange {B \natural} s4_\markup \pedalChange {E \natural}}
+    >> |
+    \time 5/4 <ef=''' g>4)_\markup \pedalChange {E \flat} q-- <df f>8.( <ef g>16 <f a>4) ef,,='4\<\glissando_\markup \column {\pedalChange {F \sharp} \pedalChange {D \natural}} \bar "||"
+      
+    \tempoIo
+    \key g \major
+    \time 4/4
+    <c''=''' ef g b>8 r <c,='' ef g b>8.\ff q16 q4.
+  }
 }
+\addQuote "rh" \harpNotesRight
 
 harpNotesLeft = {
   \key g \major
@@ -129,8 +151,53 @@ harpNotesLeft = {
   \repeat unfold 5 \dcsL
   % now in middle of 3/2 measure!
   \relative d, {
-    #(define afterGraceFraction (cons 1 4))
-    r8 d \afterGrace cs2 { \new Voice { \override Stem #'transparent = ##t d!4 ef f g a b }} |
+    r8 d cs2 \glissando \bar "||"
   }
+  
+  \key bf \major
   \time 7/4
+  \clef treble
+  \relative b' {
+    <<
+      {\change Staff = "RH" \hideNotes b'=''4 s2.}
+      \new Voice {
+        \voiceOne
+        \change Staff = "LH" <bf,=' d>4-- q-- q-- <af c>-- <cf ef>8.( <bf d>16 <af c>4) r
+      }
+      \new Voice {
+        \voiceTwo
+        r8 gf='4 f gf f gf f8 r4
+      }
+    >>
+  }
+  \change Staff = "LH"
+  \unHideNotes
+  \relative c'' {
+    <<
+      {
+        \voiceOne
+        <cf='' ef>4-- q-- q-- <bf d>-- <df f>8.( <cf ef>16 <bf d>4) r |
+        <bf=' d>4-- q-- q-- <af c>-- <cf ef>8.( <bf d>16 <af c>4) r |
+        <cf ef>4-- q-- q-- <bf d>-- <df f>8.( <cf ef>16 <bf d>4) r |
+        \time 4/4 <df='' f>4-- q-- q-- <c e>8.( <df f>16 |
+        \time 5/4 <ef g>4) q-- <df f>8.( g16 <f a>4) r
+      }
+      \new Voice {
+        \voiceTwo
+        r8 f,='4 gf f gf f gf8 r4 |
+        r8 gf4 f gf f gf f8 r4
+        r8 f4 gf f gf f gf8 r4 |
+        \time 4/4 r8 a4 g b a8 |
+        \time 5/4 r8 c4 b8 r ef4 df8 r4 |
+      }
+    >>
+    \oneVoice
+    \key g \major
+    \time 4/4
+    <c='' ef g b>8 r
+  }
+  
+  \relative c, {
+    \clef bass <c c'>2. | r4 <d, d'>8 <d' d'> <d' d'>2 |
+  }
 }

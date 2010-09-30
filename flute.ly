@@ -41,9 +41,23 @@ fluteNotes = {
     % MS p. 6
     r4 r8 fss8-.\p r gs-. r as-. r b-. r4 r |
     \accel
-    \time 3/2 r4 r8 es,=''-.\< r fs-. r gs-. r as--\f \noBeam b8.( cs16 |
+    \time 3/2 r4 r8 es,=''-.\< r fs-. r gs-. r as--\f \noBeam b8.( cs16 \bar "||"
+    
     \agitato
-    \time 7/4 d='''4)
+    \key bf \major
+    \time 7/4
+    d='''4) d-- d-- d8.( c16) ef8.( d16 c4) c8.( d16 |
+    % MS p. 7
+    ef4) ef-- ef-- ef8.( d16) f8.( ef16 d4) bf8.( c16 |
+    d4) d-- d-- d8.( c16) ef8.( d16 c4) c8.( d16 |
+    ef4) ef-- ef-- ef8.( d16) f8.( ef16 d4) d8.( ef16 |
+    \time 4/4 f4) f-- f-- e8.( f16 |
+    \time 5/4 g4) g-- f8.( g16 a4) g8.(\< a16 \bar "||"
+    
+    \tempoIo
+    \key g \major
+    \time 4/4
+    b='''8) r g8.\ff g16 g4. ef8-- | g-- a-- b4
   }
 }
 

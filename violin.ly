@@ -39,8 +39,21 @@ violinNotes = {
     % MS p. 6
     r4 r8 ds-.^\pizz r e-. r fs-. r g-. r4 r |
     \accel
-    \time 3/2 r4 r8 cs,=''-.\< r d-. r e-. as,='4--\f^\arco b8.( cs16 |
+    \time 3/2 r4 r8 cs,=''-.\< r d-. r e-. as,='4--\f^\arco b8.( cs16 \bar "||"
+    
     \agitato
-    \time 7/4 d=''4)
+    \key bf \major
+    \time 7/4
+    d=''8) d4-- d-- d-- d8-- c8.( d16 ef8. d16 c4) |
+    % MS p. 7
+    r8 ef4-- ef-- ef-- ef8-- d8.( ef16 f8. ef16 d4) |
+    r8 d4-- d-- d-- d8-- c8.( d16 ef8. d16 c4) |
+    r8 ef4-- ef-- ef-- ef8-- d8.( ef16 f8. ef16 d4) |
+    \time 4/4 r8 f=''4-- f-- f-- f8-- | \time 5/4 r8 g4-- g-- g8-- f8.(\< g16 a4) \bar "||"
+    
+    \tempoIo
+    \key g \major
+    \time 4/4
+    b=''8.\ff b16 b4. g8-- b-- c-- | d2.
   }
 }

@@ -56,9 +56,23 @@ violaNotes = {
     g4-.( g-. g-.) g8( fs) a8.( g16 fs4) d'='8.( e16 |
     fs4) ds-- e-- fs-- g8.( fs16 e4) cs8.( d16) |
     \accel
-    \time 3/2 e4 cs--\< d-- e-- fs--\f g8.( a16 |
+    \time 3/2 e4 cs--\< d-- e-- fs--\f g8.( a16 \bar "||"
+    
     \agitato
+    \key bf \major
     \time 7/4
-    bf='4)
+    bf='8) bf4-- bf-- bf-- bf8 af8.( bf16 cf8. bf16 af4) |
+    % MS p. 7
+    r8 cf4-- cf-- cf-- cf8 bf8.( cf16 df8. cf16 bf4) |
+    r8 bf4-- bf-- bf-- bf8 af8.( bf16 cf8. bf16 af4) |
+    r8 cf4-- cf-- cf-- cf8 bf8.( cf16 df8. cf16 bf4) |
+    \time 4/4 r8 df=''4-- df-- df-- df8-- |
+    \time 5/4 r \clef treble ef4-- ef-- ef8-- df8.(\< ef16 f4) \bar "||"
+    
+    \tempoIo
+    \key g \major
+    \time 4/4
+    g8.\ff g16 \clef alto c,,,=32( ef g b \clef treble ef g b ef g=''8--) ef-- g-- a-- |
+    b4 \clef alto d,,,=32( g b ef \clef treble g b ef g b=''4)
   }
 }

@@ -56,8 +56,35 @@ clarinetNotes = {
     b4-.( b-. b-.) b8( as) cs8.( b16 as4) fs'='8.( gs16 |
     as4) fss-- gs-- as-- b8.( as16 gs4) es8.( fs16 |
     \accel
-    \time 3/2 gs4) es--\< fs-- gs-- as8--\f fs'=''-- \noBeam g8.( a16 |
-    \agitato
-    \time 7/4 bf=''4)
+    \time 3/2 gs4) es--\< fs-- gs-- as8--\f fs'=''-- \noBeam g8.( a16 \bar "||"
+  }
+  
+  \agitato
+  \tag #'concert-pitch {
+    \key bf \major
+  }
+  
+  \time 7/4
+  \transpose bf as { % this should only happen with #'transposed
+    \relative b'' {
+      bf4) bf-- bf-- bf8.( af16) cf8.( bf16 af4) af8.( bf16 |
+      % MS p. 7
+      cf4) cf-- cf-- cf8.( bf16) df8.( cf16 bf4) gf8.( af16 |
+      bf4) bf-- bf-- bf8.( af16) cf8.( bf16 af4) af8.( bf16 |
+      cf4) cf-- cf-- cf8.( bf16) df8.( cf16 bf4) bf8.( cf16 |
+      \time 4/4 df='''4) df-- df-- c8.( df16 |
+      \time 5/4 ef4) ef-- df8.( ef16 df4)
+    }
+  }
+  \relative b'' {
+   b8.(\< cs16 \bar "||"
+  }
+  
+  \tempoIo
+  \key g \major
+  \time 4/4
+  \relative c''' {
+    c!8) r b8.\ff b16 b4. g8-- | b-- c-- d4
+    
   }
 }

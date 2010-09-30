@@ -62,7 +62,7 @@ staffCello = \new Staff {
 staffHarp = \new PianoStaff {
 	\set PianoStaff.midiInstrument = #"orchestral harp"
 	\set PianoStaff.instrumentName = #"Harp"
-				<<
+  <<
 		\context Staff = "RH" {  % Right hand 
 			\clef treble
 			\harpNotesRight
@@ -107,6 +107,7 @@ basicScore = <<
       \Staff
       extraNatural = ##f
       \override TimeSignature #'style = #'numbered
+      \override Glissando #'breakable = ##t 
     }
   }
 }

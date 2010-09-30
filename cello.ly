@@ -37,8 +37,23 @@ celloNotes = {
   \relative f' {
     % MS p. 6
     \accel
-    \time 3/2 r2 r fs8.(\f e16 ds8. cs16) |
+    \time 3/2 r2 r fs8.(\f e16 ds8. cs16) \bar "||"
+    
     \agitato
+    \key bf \major
     \time 7/4
+    bf=8 \noBeam gf-.( f-. f,-.) \repeat unfold 6 {r gf'-.([ f-. f,-.)]} | % 2 measures
+    % MS p. 7
+    \repeat unfold 7 {r8 gf'=-.([ f-. f,-.)]} | % 2 measures
+    \time 4/4 r8 a'=-.( g-. g,-.) r b'-.( a-. a,-.) |
+    \time 5/4 r c'-.( b-. b,-.) r ef'-.( df-. df,-.)
+  }
+  \relative c' {
+    \clef treble \times 4/7 { c16(\< d ef fs g a b) } |
+    
+    \tempoIo
+    \key g \major
+    \time 4/4
+    c=''8.\ff c16 c4. b8-- c-- ef-- | ef2~ ef8 d4 d8 |
   }
 }
