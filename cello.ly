@@ -27,7 +27,7 @@ celloNotes = {
     fs8. e16 d4~ d8 c\< d ef | cs1\f\> |
     \piùMosso
     r8 \clef bass d='-.\mp\>( cs-. cs,-.) r d'='-.( cs-. cs,-.) |
-    r\! d=-.\p( cs-. cs,-.) r d'=-.( cs-. cs,-.) |
+    r\! d=-.\p^\pizz( cs-. cs,-.) r d'=-.( cs-. cs,-.) |
     \time 3/2 R1. \bar "||"
     
     \key fs \major
@@ -37,7 +37,7 @@ celloNotes = {
   \relative f' {
     % MS p. 6
     \accel
-    \time 3/2 r2 r fs8.(\f e16 ds8. cs16) \bar "||"
+    \time 3/2 r2 r fs8.(\f^\arco e16 ds8. cs16) \bar "||"
     
     \agitato
     \key bf \major
