@@ -54,6 +54,18 @@ violinNotes = {
     \tempoIo
     \key g \major
     \time 4/4
-    b=''8.\ff b16 b4. g8-- b-- c-- | d2.
+    b=''8.\ff b16 b4. g8-- b-- c-- | d2~ d8 b4 b8-- |
+    % MS p. 8
+    \time 3/4 c4. a8-- d-- c-- | \time 4/4 b8-- b4. r4 b,='8.\mf b16 |
+    \time 3/4 b4. g8-- b-- c-- | \time 7/8 <d d,>4. r8 b4 b8 |
+    \time 4/4 a4. d8 fs!4. \grace{ e16[( fs16] } e8) |
+    \time 3/4 d=''4 r r |
+  }
+  \relative f' {
+    % MS p. 9
+    \time 7/4 r4 r8 f4--\p f-- f8-- f( ef) g8.( f16 ef4) |
+    r4 r8 af4-- af-- af8-- af(\< g) bf8.( af16 g8) b'=''--\f |
+    \time 4/4 b2~ b8 g-- b-- c-- |
+    \time 5/4 d2.
   }
 }

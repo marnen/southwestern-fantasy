@@ -73,6 +73,15 @@ violaNotes = {
     \key g \major
     \time 4/4
     g8.\ff g16 \clef alto c,,,=32( ef g b \clef treble ef g b ef g=''8--) ef-- g-- a-- |
-    b4 \clef alto d,,,=32( g b ef \clef treble g b ef g b=''4)
+    b4 \clef alto d,,,=32( g b ef \clef treble g b ef g b=''8) g4 g8-- |
+    % MS p. 8
+    \time 3/4 ef4. ef8-- b'-- a-- | \time 4/4 g-- g=''(~ g32\> b g ef \clef alto d b g ef) d='2\mf |
+    \time 3/4 ef4. ef8-- ef-- ef-- | \time 7/8 g4. r8 ef4 d8 |
+    \time 4/4 ef4. f8 g4. a8 | \time 3/4 g8( fs) r4 r |
+  }
+  \relative a {
+    % MS p. 9
+    \time 7/4 R1.. | r2 r4 af=8(\p g) bf8.(\< af16 g8. f16 ef8. d16) |
+    \time 4/4 c=1\f~ | \time 5/4 c4 d2~ d2 |
   }
 }

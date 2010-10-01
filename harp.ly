@@ -97,6 +97,20 @@ harpNotesRight = {
     \time 3/4 q8 q <d ef a c>4 r |
     \time 4/4 \ottava #1 <d'=''' b' d>8 <c a' c> <b g' b>4 \ottava #0 r2 |
   }
+  \relative g, {
+    \time 3/4 r8\mf \clef bass g32 b ef g r8 \clef treble g32 b ef g r8 g32 b ef g='' |
+    \time 7/8 r8 d=''32 g b ef r8 \ottava #1 d='''32 g b ef <d b g d>4_\markup \pedalChange {F \natural} \ottava #0 r8
+  }
+  \relative f'' {
+    \time 4/4 r4 <f gf'>2_\markup \pedalChange {G \flat} <ef ff'>4_\markup \column {\pedalChange {F \flat} \pedalChange {B \flat}} |
+    \time 3/4 r4 <d='' d'>2 |
+    % MS p. 9
+    \time 7/4 R1..*2 |
+  }
+  \relative c {
+    \time 4/4 r4 \clef bass c16\f ef g b \clef treble c ef g b c ef g b |
+    \time 5/4 \ottava #1 c=''' g' b ef <d='''' b g d>2 \ottava #0
+  }
 }
 \addQuote "rh" \harpNotesRight
 
@@ -214,5 +228,17 @@ harpNotesLeft = {
   \relative b {
     \clef treble <b g'>8-- <c a'>-- <d b'>4 r |
   }
-
+  \relative e, {
+    \time 3/4 \clef bass ef32 g b ef r8 ef32 g b ef r8 \clef treble ef32 g b ef r8 |
+    \time 7/8 d,='32 g b ef r8 d32 g b ef r8 r4 r8 |
+  }
+  \relative a' {
+    \time 4/4 r4 <a ef>2 <bf gf'>4 |
+  }
+  \time 3/4 r4 \clef bass <d, d>2 |
+  % MS p. 9
+  \time 7/4 R1..*2 |
+  \relative c, {
+    \time 4/4 r4 <c c,>2. | \time 5/4 r4 <d d,>8-- ef''='-- <d d,>4 r r |
+  }
 }

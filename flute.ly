@@ -57,7 +57,21 @@ fluteNotes = {
     \tempoIo
     \key g \major
     \time 4/4
-    b='''8) r g8.\ff g16 g4. ef8-- | g-- a-- b4
+    b='''8) r g8.\ff g16 g4. ef8-- | g-- a-- b4 r g~ |
+    % MS p. 8
+    \time 3/4 g8 g a2 | \time 4/4 r4 g8-- a-- b4 r4 |
+  }
+  \relative b'' {
+    \time 3/4 r4 b4.\mf g8-- |
+    \time 7/8 \set beatStructure = #'(4 3) r g-- b-- c-- d-- r r |
+    \time 4/4 r4 f!2( e4 | \time 3/4 d=''') r r |
+  }
+  \relative a' {
+    % MS p. 9
+    \time 7/4 \set beatStructure = #'(1 1 1 1 1 1 1) r4 r8 a4--\p a-- a8-- a( g) b8.( a16 g4) |
+    r4 r8 c4-- c-- c8-- c(\< b) d8.( c16 b8) g'=''--\f |
+    \time 4/4 g4( g'='''4.) ef8-- g-- a-- |
+    \time 5/4 b2.
   }
 }
 

@@ -54,6 +54,18 @@ celloNotes = {
     \tempoIo
     \key g \major
     \time 4/4
-    c=''8.\ff c16 c4. b8-- c-- ef-- | ef2~ ef8 d4 d8 |
+    c=''8.\ff c16 c4. b8-- c-- ef-- | ef2~ ef8 d4 d8-- |
+    % MS p. 8
+    \time 3/4 d4. d8-- ef-- d-- | \time 4/4 ef-- d4. r4 g,='8.\f g16 |
+    \time 3/4 g4. f8-- g-- a-- | \time 7/8 b4. r8 g4 g8 |
+    \time 4/4 f4. g8 bf4. c8 | \time 3/4 bf8( a) r4
+  }
+  \relative f {
+    \clef bass fs8.(\p g16) |
+    % MS p. 9
+    \time 7/4 a4-- a-- a-- a8( g) b8.( a16 g4) a8.( b16) |
+    c4-- c-- c-- c8( b) d8.(\< c16 b4) b8--\f b-- |
+    \time 4/4 b2~ b8 g-- b-- c-- |
+    \time 5/4 d-- \noBeam \clef treble g---> b---> c---> d=''4---> r8 \clef bass d,4 d8 |
   }
 }

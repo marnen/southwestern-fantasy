@@ -84,7 +84,22 @@ clarinetNotes = {
   \key g \major
   \time 4/4
   \relative c''' {
-    c!8) r b8.\ff b16 b4. g8-- | b-- c-- d4
-    
+    c!8) r b8.\ff b16 b4. g8-- | b-- c-- d4 r b~ |
+    % MS p. 8
+    \time 3/4 b8 b c2 | \time 4/4 r4 b8-- c-- d4 r |    
+  }
+  \relative f'' {
+    \time 3/4 r4 f4.\mf ef8-- |
+    \time 7/8 \set beatStructure = #'(4 3) r ef-- g-- a-- b-- r r |
+    \time 4/4 r4 f=''2( ef4) | \time 3/4 cs8( d) r4
+  }
+  \relative d {
+    d8.\p( ef16) |
+    % MS p. 9
+    \time 7/4 f4-- f-- f-- f8( ef) g8.( f16 ef4) f8.( g16) |
+    af4-- af-- af-- af8( g) bf8.(\< af16 g8. f16 ef8.\f) r16 |
+  }
+  \relative g'' {
+    \time 4/4 r4 g4. ef8-- g-- a-- | \time 5/4 b2.
   }
 }
