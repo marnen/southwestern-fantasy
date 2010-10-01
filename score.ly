@@ -114,6 +114,7 @@ basicScore = <<
 }
 
 \paper {
+  system-separator-markup = \slashSeparator
 }
 
 
