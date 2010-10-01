@@ -121,6 +121,7 @@ basicScore = <<
 
 \paper {
   system-separator-markup = \slashSeparator
+  left-margin = 18\mm
 }
 
 
