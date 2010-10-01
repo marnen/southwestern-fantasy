@@ -51,8 +51,8 @@ fluteNotes = {
     ef4) ef-- ef-- ef8.( d16) f8.( ef16 d4) bf8.( c16 |
     d4) d-- d-- d8.( c16) ef8.( d16 c4) c8.( d16 |
     ef4) ef-- ef-- ef8.( d16) f8.( ef16 d4) d8.( ef16 |
-    \time 4/4 f4) f-- f-- e8.( f16 |
-    \time 5/4 g4) g-- f8.( g16 a4) g8.(\< a16 \bar "||"
+    \time 3/2 f4) f-- f-- f8.( e16) g8.( f16 e8. f16 |
+    g4) g-- g-- f8.( g16 a4) g8.(\< a16 \bar "||"
     
     \tempoIo
     \key g \major

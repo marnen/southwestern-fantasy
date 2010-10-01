@@ -49,7 +49,8 @@ violinNotes = {
     r8 ef4-- ef-- ef-- ef8-- d8.( ef16 f8. ef16 d4) |
     r8 d4-- d-- d-- d8-- c8.( d16 ef8. d16 c4) |
     r8 ef4-- ef-- ef-- ef8-- d8.( ef16 f8. ef16 d4) |
-    \time 4/4 r8 f=''4-- f-- f-- f8-- | \time 5/4 r8 g4-- g-- g8-- f8.(\< g16 a4) \bar "||"
+    \time 3/2 r8 f=''4-- f-- f-- f8-- e8.( f16 g8. f16) |
+    r8 g4-- g-- g-- g8-- f8.(\< g16 a4) \bar "||"
     
     \tempoIo
     \key g \major

@@ -95,12 +95,15 @@ harpNotesRight = {
     <cf''=''' ef>4--_\markup \pedalChange {C \flat} q4-- q-- <bf d>-- <df f>8.(_\markup \pedalChange {D \flat} <cf ef>16 <bf d>4)_\markup \pedalChange {D \natural} f,='_\markup \pedalChange {C \natural} \glissando |
     <bf'='' d>4-- q4-- q-- <af c>-- <cf ef>8.(_\markup \pedalChange {C \flat} <bf d>16 <af c>4)_\markup \pedalChange {C \natural} f,=' \glissando |
     <cf''=''' ef>4--_\markup \pedalChange {C \flat} q4-- q-- <bf d>-- <df f>8.(_\markup \pedalChange {D \flat} <cf ef>16 <bf d>4)_\markup \pedalChange {D \natural} f,='_\markup \pedalChange {C \natural} \glissando |
-    \time 4/4
+    \time 3/2
     <<
-      { <df''=''' f>4-- q-- q-- <c e>8.( <d f>16 }
-      { s4._\markup \column {\pedalChange {A \natural} \pedalChange {D \flat}} s4_\markup \pedalChange {G \natural} s8_\markup \pedalChange {B \natural} s4_\markup \pedalChange {E \natural}}
+      { <df''=''' f>4-- q-- q-- <c e>4-- <ef g>8.( <df f>16 <c e>8. <d f>16 }
+      { s4._\markup \column {\pedalChange {A \natural} \pedalChange {D \flat}} s4_\markup \pedalChange {G \natural} s8 s4_\markup \pedalChange {E \natural} s8_\markup \pedalChange {E \flat} s8_\markup \pedalChange {B \natural} s4_\markup \pedalChange {E \natural}}
     >> |
-    \time 5/4 <ef=''' g>4)_\markup \pedalChange {E \flat} q-- <df f>8.( <ef g>16 <f a>4) ef,,='4\<\glissando_\markup \column {\pedalChange {F \sharp} \pedalChange {D \natural}} \bar "||"
+    <<
+      { <ef=''' g>4) q-- q-- <df f>8.( <ef g>16 <f a>4) ef,,='4\<\glissando }
+      { s1_\markup \pedalChange {E \flat} s8 s_\markup \pedalChange {D \natural} s4_\markup \pedalChange {F \sharp}}
+    >> \bar "||"
       
     \tempoIo
     \key g \major
@@ -224,16 +227,16 @@ harpNotesLeft = {
         <cf='' ef>4-- q-- q-- <bf d>-- <df f>8.( <cf ef>16 <bf d>4) r |
         <bf=' d>4-- q-- q-- <af c>-- <cf ef>8.( <bf d>16 <af c>4) r |
         <cf ef>4-- q-- q-- <bf d>-- <df f>8.( <cf ef>16 <bf d>4) r |
-        \time 4/4 <df='' f>4-- q-- q-- <c e>8.( <df f>16 |
-        \time 5/4 <ef g>4) q-- <df f>8.( g16 <f a>4) r
+        \time 3/2 <df='' f>4-- q-- q-- <c e>-- <ef g>8.( <df f>16 <c e>8. <df f>16 |
+        <ef g>4) q-- g-- f8.( g16 <f a>4) r
       }
       \new Voice {
         \voiceTwo
         r8 f,='4 gf f gf f gf8 r4 |
         r8 gf4 f gf f gf f8 r4
         r8 f4 gf f gf f gf8 r4 |
-        \time 4/4 r8 a4 g b a8 |
-        \time 5/4 r8 c4 b8 r ef4 df8 r4 |
+        r8 a4 g a g b a8 |
+        r8 c4 b8 r ef4 df8 r d r4 |
       }
     >>
     \oneVoice

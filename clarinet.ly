@@ -82,8 +82,8 @@ clarinetNotes = {
       cf4) cf-- cf-- cf8.( bf16) df8.( cf16 bf4) gf8.( af16 |
       bf4) bf-- bf-- bf8.( af16) cf8.( bf16 af4) af8.( bf16 |
       cf4) cf-- cf-- cf8.( bf16) df8.( cf16 bf4) bf8.( cf16 |
-      \time 4/4 df='''4) df-- df-- c8.( df16 |
-      \time 5/4 ef4) ef-- df8.( ef16 df4)
+      \time 3/2 df='''4) df-- df-- df8.( c16) ef8.( df16 c8. df16 |
+      ef4) ef-- ef-- df8.( ef16 df4)
     }
   }
   \relative b'' {
