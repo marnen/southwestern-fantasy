@@ -32,7 +32,7 @@ celloNotes = {
     
     \key fs \major
     \time 7/4
-    R1*7/4*5 |
+    R1*7/4*11 | % 6 additional measures -- pizz. bass will go here
   }
   \relative f' {
     % MS p. 6

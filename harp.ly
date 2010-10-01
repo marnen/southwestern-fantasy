@@ -62,13 +62,27 @@ harpNotesRight = {
   \repeat unfold 7 \dcsR | % 2 measures
   % MS p. 6
   \repeat unfold 7 \dcsR | % 2 measures
+  % BEGIN inserted material
+  <<
+    {
+      \transpose d' ff' { \repeat unfold 3 \dcsR }
+      \repeat unfold 4 \dcsR % 2 measures
+    }
+    {
+      s8 s_\markup \pedalChange {F \flat} s4*6 | s1..
+    }
+  >> |
+  \repeat unfold 7 \dcsR | % 2 measures
+  \repeat unfold 7 \dcsR | % 2 measures
+  % END inserted material
+  %
   <<
     {
       \transpose d' ff' { \repeat unfold 3 \dcsR } r8 d'-.[( |
       \accel
       \time 3/2 cs'-.]) r \dcsR \dcsR r4
     }
-    { s8 s_\markup \pedalChange {F \flat} s4*6 | s4 s4\< s4. s8_\markup \pedalChange {A \natural} s2\f_\markup \pedalChange {F \natural} }
+    { s1.. | s4 s4\< s4. s8_\markup \pedalChange {A \natural} s2\f_\markup \pedalChange {F \natural} }
   >> \bar "||"
   
     
@@ -176,6 +190,9 @@ harpNotesLeft = {
   \repeat unfold 7 \dcsL | % 2 measures
   % MS p. 6
   \repeat unfold 7 \dcsL | % 2 measures
+  % BEGIN inserted material
+  \repeat unfold 21 \dcsL | % 6 measures
+  % END inserted material
   \repeat unfold 5 \dcsL
   % now in middle of 3/2 measure!
   \relative d, {

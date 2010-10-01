@@ -35,7 +35,7 @@ violinNotes = {
   \relative d'' {
     \key fs \major
     \time 7/4
-    R1*7/4*4
+    R1*7/4*10 | % 6 additional measures
     % MS p. 6
     r4 r8 ds-.^\pizz r e-. r fs-. r g-. r4 r |
     \accel
