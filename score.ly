@@ -132,6 +132,7 @@ basicScore = <<
 }
 
 \paper {
+  first-page-number = #0
   system-separator-markup = \slashSeparator
   left-margin = 18\mm
 }
