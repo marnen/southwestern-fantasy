@@ -57,7 +57,7 @@ clarinetNotes = {
     % BEGIN inserted material
     fs8.( gs16 |
     as4) fss-- gs-- as-- b8.( as16 gs4) es8.( fs16 |
-    gs4) es-- fs-- gs-- a8.( gs16 fs4) fs'='8.( gs16) |
+    gs4) es-- fs-- gs-- as8.( gs16 fs4) fs'='8.( gs16) |
     as4-.( as-. as-. gs-.) b8.( as16 gs4) gs8.( as16) |
     b4-.( b-. b-. as-.) cs8.( b16 as4) fs8.( gs16) |
     as4-.( as-. as-.) as8( gs) b8.( as16 gs4) gs8.( as16) |
