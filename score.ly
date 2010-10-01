@@ -23,12 +23,14 @@
 staffFlute = \new Staff {
 	\time 4/4
 	\set Staff.instrumentName = "Flute"
+    \set Staff.shortInstrumentName = "Fl."
 	\set Staff.midiInstrument = "flute"
 	\clef treble
   \fluteNotes
 }
 staffClarinet = \new Staff {
 	\set Staff.instrumentName = "Clarinet in A"
+    \set Staff.shortInstrumentName = "Cl. (A)"
 	\set Staff.midiInstrument = "clarinet"
 	\clef treble
 	\tag #'transposed {
@@ -42,18 +44,21 @@ staffClarinet = \new Staff {
 }
 staffViolin = \new Staff {
 	\set Staff.instrumentName = "Violin"
+    \set Staff.shortInstrumentName = "Vln."
 	\set Staff.midiInstrument = "violin"
 	\clef treble
 	\violinNotes
 }
 staffViola = \new Staff {
 	\set Staff.instrumentName = "Viola"
+    \set Staff.shortInstrumentName = "Vla."
 	\set Staff.midiInstrument = "viola"
 	\clef alto
 	\violaNotes
 }
 staffCello = \new Staff {
 	\set Staff.instrumentName = "Violoncello"
+    \set Staff.shortInstrumentName = "Vc."
 	\set Staff.midiInstrument = "cello"
 	\clef bass
 	\celloNotes
@@ -62,6 +67,7 @@ staffCello = \new Staff {
 staffHarp = \new PianoStaff {
 	\set PianoStaff.midiInstrument = #"orchestral harp"
 	\set PianoStaff.instrumentName = #"Harp"
+    \set PianoStaff.shortInstrumentName = #"Hp."
 	\set PianoStaff.connectArpeggios = ##t
   <<
 		\context Staff = "RH" {  % Right hand 
