@@ -57,13 +57,13 @@ violinNotes = {
     \time 4/4
     b=''8.\ff b16 b4. g8-- b-- c-- | d2~ d8 b4 b8-- |
     % MS p. 8
-    \time 3/4 c4. a8-- d-- c-- | \time 4/4 b8-- b4. r8 b4 b8 |
-    \time 3/4 b4. g8-- b-- c-- | \time 4/4 d2~ d8 b4 b8-- |
+    \time 3/4 c4. a8--[ d-- c--] | \time 4/4 b8-- b4. r8 b4 b8 |
+    \time 3/4 b4. g8--[ b-- c--] | \time 4/4 d2~ d8 b4 b8-- |
     \time 5/4 a4. d8-- fs2 \grace{ e16[( fs16] } e4) |
     \time 4/4 d='''2 r4 b,='8.\mf b16 |
-    \time 3/4 b4. g8-- b-- c-- | \time 7/8 d4. r8 b4 b8-- |
-    \time 3/4 c4. a8-- d-- c-- | \time 4/4 b-- b4. r4 b8. b16 |
-    \time 3/4 b4. g8-- b-- c-- | \time 7/8 d4. r8 b4 b8 |
+    \time 3/4 b4. g8--[ b-- c--] | \time 7/8 d4. r8 b4 b8-- |
+    \time 3/4 c4. a8--[ d-- c--] | \time 4/4 b-- b4. r4 b8. b16 |
+    \time 3/4 b4. g8--[ b-- c--] | \time 7/8 d4. r8 b4 b8 |
     \time 4/4 a4. d8 fs!4. \grace{ e16[( fs16] } e8) |
     \time 3/4 d=''4 r r |
   }
