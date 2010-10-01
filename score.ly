@@ -3,7 +3,15 @@
 
 \header {
 	title = "Fantasy on Southwestern Folk Songs" 
- 	composer = "Marnen E. Laibow-Koser" 
+ 	composer = \markup {
+ 	  \center-column {
+ 	    "Marnen E. Laibow-Koser"
+ 	    "719 State Street, 1st floor"
+ 	    "Albany, NY 12203"
+ 	    "marnen@marnen.org • (845) 625-7801"
+ 	  }
+ 	}
+ 	date = "September 2010"
  	copyright = "Copyright © 2010 Marnen E. Laibow-Koser (ASCAP). All rights reserved." 
 }
 
@@ -11,6 +19,7 @@
 
 % Global definitions
 \include "globals.ly"
+\include "book-titling.ily"
 
 % Include notes files for the various parts
 \include "flute.ly"
@@ -22,6 +31,7 @@
 
 #(set-global-staff-size 18)
 
+\pageBreak
 staffFlute = \new Staff {
 	\time 4/4
 	\set Staff.instrumentName = "Flute"
