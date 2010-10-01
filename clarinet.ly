@@ -100,6 +100,16 @@ clarinetNotes = {
     af4-- af-- af-- af8( g) bf8.(\< af16 g8. f16 ef8.\f) r16 |
   }
   \relative g'' {
-    \time 4/4 r4 g4. ef8-- g-- a-- | \time 5/4 b2.
+    \time 4/4 r4 g4. ef8-- g-- a-- | \time 5/4 b2.~ b4 r |
+    \time 4/4 R1 |
+  }
+  \relative e {
+    % MS p. 10
+    \time 3/2 \set beatStructure = #'(1 1 1) ef4--\p ef-- ef-- d8( cs) ef8.( d16 cs4) | \time 4/4 R1 |
+    d1\pp~ | \time 7/4 d1..~ | d1~ d8 r r4 r | \time 3/4 R2. |
+  }
+  \relative d' {
+    d8.( c16 b8. a16 g8. ef16) | d8 r r4 r | \time 4/4 R1 | \time 3/4 R2. |
+    \time 4/4 R1*3 | r1\fermata \bar "|."
   }
 }

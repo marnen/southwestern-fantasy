@@ -66,6 +66,16 @@ celloNotes = {
     \time 7/4 a4-- a-- a-- a8( g) b8.( a16 g4) a8.( b16) |
     c4-- c-- c-- c8( b) d8.(\< c16 b4) b8--\f b-- |
     \time 4/4 b2~ b8 g-- b-- c-- |
-    \time 5/4 d-- \noBeam \clef treble g---> b---> c---> d=''4---> r8 \clef bass d,4 d8 |
+    \time 5/4 d-- \noBeam \clef treble g---> b---> c---> d=''4---> r8 \clef bass d,4\mf d8 |
+    \time 4/4 d4.\> c8 b4. a8 |
+    % MS p. 10
+    \time 3/2 g1.~\p | \time 4/4 g1~ | g2 r4 g8.(_\semprep a16) |
+    \time 7/4 b4-- b-- b-- b8( a) c8.( b16 a4) a8.( b16 |
+    c4) c-- c-- c8( b) d8.( c16 b4) r |
+    \time 3/4 R2.*2 |
+    % MS p. 11
+    d,=8.(\pp c16 b8. a16 g8. ef16) |
+    \time 4/4 d=,1~ | \time 3/4 d2. |
+    \time 4/4 d1~ | d1~ | d1 | r1\fermata \bar "|."
   }
 }

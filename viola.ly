@@ -82,6 +82,21 @@ violaNotes = {
   \relative a {
     % MS p. 9
     \time 7/4 R1.. | r2 r4 af=8(\p g) bf8.(\< af16 g8. f16 ef8. d16) |
-    \time 4/4 c=1\f~ | \time 5/4 c4 d2~ d2 |
+    \time 4/4 c=1\f~ | \time 5/4 c4 d2\>~ d~\mf | \time 4/4 d\> cs4 d |
+    % MS p. 10
+    \time 3/2 ef8\p r r4 r2 r | \time 4/4 R1 |
+  }
+  \relative c' {
+    \harmonicsOn
+    <c g'>1\pp~ | \time 7/4 q1..~ | q1~ q8 r r4 r |
+    \time 3/4 R2.*3 |
+  }
+  \relative d' {
+    \harmonicsOff
+    \time 4/4 r2 r4 <d b'>8^\conSord q | \time 3/4 <ef c'>4. <c a'!>8 <ef d'> <ef c'> |
+    \time 4/4 <d b'>8-- q2..~ | q1~ | q2 r |
+    \override Hairpin #'circled-tip = ##t
+    \harmonicsOn
+    << {<c g'>1\fermata^\senzaSord} {s2.\> s4\!} >> \bar "|."
   }
 }

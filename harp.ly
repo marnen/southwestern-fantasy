@@ -109,10 +109,20 @@ harpNotesRight = {
   }
   \relative c {
     \time 4/4 r4 \clef bass c16\f ef g b \clef treble c ef g b c ef g b |
-    \time 5/4 \ottava #1 c=''' g' b ef <d='''' b g d>2 \ottava #0
+    \time 5/4 \ottava #1 c=''' g' b ef <d='''' b g d>2~ q4 \ottava #0 r | \time 4/4 R1 |
+    % MS p. 10
+    \time 3/2 R1. |
+  }
+  \relative g' {
+    \crossStaffBracket
+    \time 4/4 <g c, g>1\arpeggio\p | d'=''4\flageolet\laissezVibrer\pp r r2 |
+    \time 7/4 d2\flageolet d'2~\flageolet d2. |
+    d,2\flageolet_\markup \pedalChange {A \flat} d'2~\flageolet d2. |
+    \time 3/4 R2.*3 | \time 4/4 R1 | \time 3/4 R2. | \time 4/4 R1*3 |
+    \arpeggioBracket
+    <d='''\flageolet d,\flageolet>4\arpeggio\laissezVibrer r r2\fermata \bar "|."
   }
 }
-\addQuote "rh" \harpNotesRight
 
 harpNotesLeft = {
   \key g \major
@@ -239,6 +249,21 @@ harpNotesLeft = {
   % MS p. 9
   \time 7/4 R1..*2 |
   \relative c, {
-    \time 4/4 r4 <c c,>2. | \time 5/4 r4 <d d,>8-- ef''='-- <d d,>4 r r |
+    \time 4/4 r4 <c c,>2. | \time 5/4 r4 <d d,>8-- ef''='-- <d d,>4 r r | 
+    \time 4/4 R1 | \time 3/2 R1. |
+  }
+  \relative c {
+    % MS p. 10
+    \crossStaffBracket
+    <c g c,>1\arpeggio | d4\laissezVibrer r r2 |
+    \time 7/4 R1.. |
+  }
+  \relative e'' {
+    \clef treble <ef af c>1 <d g b>2. | \time 3/4 R2.*3 |
+  }
+  \relative d, {
+    % MS p. 11
+    \time 4/4 \clef bass <d d,>1^\ppp\laissezVibrer | \time 3/4 R2. |
+    \time 4/4 r4 q2 <g g,>4~ | q4 <d d,>2 <g g,>4~ | q4 <d d,>2 <g g,>4 | R1\fermata \bar "|."
   }
 }

@@ -62,6 +62,7 @@ staffCello = \new Staff {
 staffHarp = \new PianoStaff {
 	\set PianoStaff.midiInstrument = #"orchestral harp"
 	\set PianoStaff.instrumentName = #"Harp"
+	\set PianoStaff.connectArpeggios = ##t
   <<
 		\context Staff = "RH" {  % Right hand 
 			\clef treble

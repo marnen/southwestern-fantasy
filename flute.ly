@@ -71,7 +71,22 @@ fluteNotes = {
     \time 7/4 \set beatStructure = #'(1 1 1 1 1 1 1) r4 r8 a4--\p a-- a8-- a( g) b8.( a16 g4) |
     r4 r8 c4-- c-- c8-- c(\< b) d8.( c16 b8) g'=''--\f |
     \time 4/4 g4( g'='''4.) ef8-- g-- a-- |
-    \time 5/4 b2.
+    \time 5/4 b2.~ b4 r | \time 4/4 R1 |
+    % MS p. 10
+    \time 3/2 R1. |
   }
+  \relative c''' {
+    \time 4/4 r4 \grace { c32[( g' c,] } af8-.)\p g-. r g,-. af'-. g-. | R1 |
+  }
+  \relative d'' {
+    \time 7/4 d1..\pp~ | d1~ d8 r r4 r | \time 3/4 d8.( c16 b8. a16 g8. ef16) |
+    % MS p. 11
+    d='8 r r4 r | R2. | \time 4/4 R1 | \time 3/4 R2. | \time 4/4 R1 |
+  }
+  \relative d''' {
+    r4 \grace { d16[( g] } ef8-.) d-. r d,-. ef-. r | R1 | 
+  }
+  \override Hairpin #'circled-tip = ##t
+  << {d''\fermata} {s2.\> s4\!} >> \bar "|."
 }
 

@@ -4,7 +4,10 @@
 
 arco = \markup { arco }
 pizz = \markup { pizz. }
+conSord = \markup { con sord. }
+senzaSord = \markup { senza sord. }
 
+semprep = \markup { \italic sempre \dynamic p }
 semprepp = \markup { \italic sempre \dynamic pp }
 
 andante = \tempo "Andante" 4 = 63
@@ -16,6 +19,7 @@ tempoIo = {
   \tempo "Tempo Iº" 4 = 63
 }
 
+crossStaffBracket = \once \override PianoStaff.Arpeggio #'stencil = #ly:arpeggio::brew-chord-bracket
 #(
   define-markup-command (pedalChange layout props pedaling) (markup-list?)
   (interpret-markup layout props

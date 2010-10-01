@@ -66,6 +66,18 @@ violinNotes = {
     \time 7/4 r4 r8 f4--\p f-- f8-- f( ef) g8.( f16 ef4) |
     r4 r8 af4-- af-- af8-- af(\< g) bf8.( af16 g8) b'=''--\f |
     \time 4/4 b2~ b8 g-- b-- c-- |
-    \time 5/4 d2.
+    \time 5/4 d2.~ d4 r | \time 4/4 R1 |
+    % MS p. 10
+    \time 3/2 R1. | \time 4/4 R1
   }
+  \relative d''' {
+    d1:32\pp | \time 7/4 d1..: | d1: d8.( c16 b8. a16 g8. ef16 ) |
+    \time 3/4 d8 r r4 r | R2.*2 |
+  }
+  \relative g' {
+    \time 4/4 r2 r4 g8^\conSord g | \time 3/4 af4. f8 <f bf> <f a> |
+    \time 4/4 g8-- g2..~ | g1~ | g2 r |
+  }
+  \override Hairpin #'circled-tip = ##t
+  << {d'''1:-\fermata^\senzaSord} {s2.\> s4\!} >> \bar "|."
 }
