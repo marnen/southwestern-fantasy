@@ -1,5 +1,7 @@
 \version "2.13.31"
 
+csbs = {r8 cs-.[ r8 bs,,-.]}
+
 celloNotes = {
   \key g \major
   
@@ -32,12 +34,22 @@ celloNotes = {
     
     \key fs \major
     \time 7/4
-    R1*7/4*11 | % 6 additional measures -- pizz. bass will go here
+    R1*7/4*6 | % 1 additional measure
   }
+  % BEGIN inserted material
+  << { \csbs }{ s2^\pizz } >> \repeat unfold 13 \csbs | % 4 measures
+  <<
+    {
+      s1.. | \accel \time 3/2 s4. s\<
+    }
+    {
+      \repeat unfold 5 \csbs
+    }
+  >>
+  % END inserted material
   \relative f' {
     % MS p. 6
-    \accel
-    \time 3/2 r2 r fs8.(\f^\arco e16 ds8. cs16) \bar "||"
+    r4 fs8.(\f^\arco e16 ds8. cs16) \bar "||"
     
     \agitato
     \key bf \major
