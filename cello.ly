@@ -71,6 +71,8 @@ celloNotes = {
     \time 3/4 d4. d8-- ef-- d-- | \time 4/4 ef-- d4. r8 ef4 d8-- |
     \time 3/4 c4. b8-- c-- ef-- | \time 4/4 ef2~ ef8 ef4 ef8-- |
     \time 5/4 ef4. d8 bf4 a2 | \time 4/4 bf8-- a4. r4 g='8.\mf g16 |
+    \time 3/4 g4. ef8-- g-- a-- | \time 7/8 b4. r8 g4 g8-- |
+    \time 3/4 a-- ef-- f4. ef8-- | \time 4/4 ef8-- d4. r4 g8. g16 |
     \time 3/4 g4. f8-- g-- a-- | \time 7/8 b4. r8 g4 g8 |
     \time 4/4 f4. g8 bf4. c8 | \time 3/4 bf8( a) r4
   }

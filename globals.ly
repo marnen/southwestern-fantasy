@@ -7,6 +7,8 @@ pizz = \markup { pizz. }
 conSord = \markup { con sord. }
 senzaSord = \markup { senza sord. }
 
+lh = \markup { "L.H." }
+
 semprep = \markup { \italic sempre \dynamic p }
 semprepp = \markup { \italic sempre \dynamic pp }
 

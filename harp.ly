@@ -115,15 +115,25 @@ harpNotesRight = {
     \time 4/4 \ottava #1 <d'=''' b' d>8 <c a' c> <b g' b>4 \ottava #0 r2 |
   }
   \relative e'' {
-    \time 3/4 r4 r8 ef32 g b ef g8^"L.H." r | \time 4/4 r4 r8 b,,='32 ef g b <ef g b>8^"L.H." r8 r4 |
+    \time 3/4 r4 r8 ef32 g b ef g8^\lh r | \time 4/4 r4 r8 b,,='32 ef g b <ef g b>8^\lh r8 r4 |
     \time 5/4 R1*5/4 |
   }
   \relative f {
     \time 4/4 fs32_\markup \pedalChange {B \flat} bf d fs bf d fs bf d2 r4 |
   }
+  \relative g {
+    \time 3/4 << {r4} {s8 s8\mf_\markup \pedalChange {B \natural}} >> g32 b ef g r8 r4 |
+    \time 7/8 r4 g,=32 b ef g r8 <d''=''' g b> r r |
+  }
+  \relative e'' {
+    \time 3/4 r8 <ef g b> <f a c>4_\markup \pedalChange {F \natural} r |
+  }
+  \relative d'''' {
+    \time 4/4 r4 \ottava #1 d32 b g ef \ottava #0 r8 d,=''32 b g ef r8 r4 |
+  }
   \relative g, {
     \time 3/4 r8\mf \clef bass g32 b ef g r8 \clef treble g32 b ef g r8 g32 b ef g='' |
-    \time 7/8 r8 d=''32 g b ef r8 \ottava #1 d='''32 g b ef <d b g d>4_\markup \pedalChange {F \natural} \ottava #0 r8
+    \time 7/8 r8 d=''32 g b ef r8 \ottava #1 d='''32 g b ef <d b g d>4 \ottava #0 r8
   }
   \relative f'' {
     \time 4/4 r4 <f gf'>2_\markup \pedalChange {G \flat} <ef ff'>4_\markup \column {\pedalChange {F \flat} \pedalChange {B \flat}} |
@@ -275,6 +285,24 @@ harpNotesLeft = {
   } |
   \time 5/4 R1*5/4 |
   \time 4/4 r8 \clef bass <d, d>8 \clef treble d''2 r4 |
+  \relative c, {
+    \time 3/4 r8 \clef bass c32 g' b ef r8
+  }
+  \relative b' {
+    \clef treble <b ef g>8 r4 |
+  }
+  \relative d, {
+    \time 7/8 r8 \clef bass d32 g b ef r8 
+  }
+  \relative b' {
+    \clef treble b32 ef g b r4 r8 |
+  }
+  \relative e' {
+    \time 3/4 r8 <ef g b>8 <f a c>4 r |
+  }
+  \relative d''' {
+    \time 4/4 r4 r8 d32 b g ef r8 \clef bass d,32 b g e d=4 |
+  }
   \relative e, {
     \time 3/4 \clef bass ef32 g b ef r8 ef32 g b ef r8 \clef treble ef32 g b ef r8 |
     \time 7/8 d,='32 g b ef r8 d32 g b ef r8 r4 r8 |

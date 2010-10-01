@@ -99,6 +99,8 @@ clarinetNotes = {
     \time 3/4 b8 b c2 | \time 4/4 r4 b8-- c-- d4 r |    
     \time 3/4 b8. b16 b4. g8-- | \time 4/4 b-- c-- d4 r2 |
     \time 5/4 r8 ef d4~ d bf a | \time 4/4 a2 r |
+    \time 3/4 r4 g4.\mf ef8 | \time 7/8 g a b4 r r8 |
+    \time 3/4 r8 g a4. f8 | \time 4/4 b a a( g) r2 |
   }
   \relative f'' {
     \time 3/4 r4 f4.\mf ef8-- |

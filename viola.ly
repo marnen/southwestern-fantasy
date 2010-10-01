@@ -90,7 +90,9 @@ violaNotes = {
     \time 3/4 g=''4. ef8-- g-- a-- |
     \time 4/4 b4 \clef alto d,,,=32( g b ef \clef treble g b ef g b=''8) g4 g8-- |
     \time 5/4 fs4. a8 g4 bf2 | \time 4/4 fs4~ fs32\> bf( a fs d bf a fs) d='2\mf |
-    \time 3/4 \clef alto ef4. ef8-- ef-- ef-- | \time 7/8 g4. r8 ef4 d8 |
+    \time 3/4 \clef alto c4. c8-- c-- c-- | \time 7/8 ef4. r8 ef4 d8 |
+    \time 3/4 ef4. c8-- c-- c-- | c-- d4. r4 d8. d16 |
+    \time 3/4 ef4. ef8-- ef-- ef-- | \time 7/8 g4. r8 ef4 d8 |
     \time 4/4 ef4. f8 g4. a8 | \time 3/4 g8( fs) r4 r |
   }
   \relative a {

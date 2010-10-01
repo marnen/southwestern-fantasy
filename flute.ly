@@ -64,7 +64,11 @@ fluteNotes = {
     \time 5/4 r8 b8 a4~ a g bf | \time 4/4 fs2 r |
   }
   \relative b'' {
-    \time 3/4 r4 b4.\mf g8-- |
+    \time 3/4 r4 b4.\mf g8 | \time 7/8 b c d4 r r8 |
+    \time 3/4 r8 b c4. a8 | \time 4/4 d c c( b) r2 |
+  }
+  \relative b'' {
+    \time 3/4 r4 b4. g8-- |
     \time 7/8 \set beatStructure = #'(4 3) r g-- b-- c-- d-- r r |
     \time 4/4 r4 f!2( e4 | \time 3/4 d=''') r r |
   }
