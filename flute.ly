@@ -60,6 +60,8 @@ fluteNotes = {
     b='''8) r g8.\ff g16 g4. ef8-- | g-- a-- b4 r g~ |
     % MS p. 8
     \time 3/4 g8 g a2 | \time 4/4 r4 g8-- a-- b4 r4 |
+    \time 3/4 g8. g16 g4. ef8-- | \time 4/4 g-- a-- b4 r2 |
+    \time 5/4 r8 b8 a4~ a g bf | \time 4/4 fs2 r |
   }
   \relative b'' {
     \time 3/4 r4 b4.\mf g8-- |

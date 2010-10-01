@@ -97,6 +97,8 @@ clarinetNotes = {
     c!8) r b8.\ff b16 b4. g8-- | b-- c-- d4 r b~ |
     % MS p. 8
     \time 3/4 b8 b c2 | \time 4/4 r4 b8-- c-- d4 r |    
+    \time 3/4 b8. b16 b4. g8-- | \time 4/4 b-- c-- d4 r2 |
+    \time 5/4 r8 ef d4~ d bf a | \time 4/4 a2 r |
   }
   \relative f'' {
     \time 3/4 r4 f4.\mf ef8-- |
