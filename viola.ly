@@ -109,7 +109,9 @@ violaNotes = {
   }
   \relative d' {
     \harmonicsOff
-    \time 4/4 r2 r4 <d b'>8^\conSord q | \time 3/4 <ef c'>4. <c a'!>8 <ef d'> <ef c'> |
+    \time 4/4 r2 r4 <d b'>8^\conSord q | 
+    \time 3/4 q4. <b g'>8 <d b'> <ef c'> | <d d'>2 <d b'>8 q |
+    <ef c'>4. <c a'!>8 <ef d'> <ef c'> |
     \time 4/4 <d b'>8-- q2..~ | q1~ | q2 r |
     \override Hairpin #'circled-tip = ##t
     \harmonicsOn

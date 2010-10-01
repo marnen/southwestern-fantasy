@@ -123,7 +123,7 @@ clarinetNotes = {
     d1\pp~ | \time 7/4 d1..~ | d1~ d8 r r4 r | \time 3/4 R2. |
   }
   \relative d' {
-    d8.( c16 b8. a16 g8. ef16) | d8 r r4 r | \time 4/4 R1 | \time 3/4 R2. |
+    d8.( c16 b8. a16 g8. ef16) | d8 r r4 r | \time 4/4 R1 | \time 3/4 R2.*3 |
     \time 4/4 R1*3 | r1\fermata \bar "|."
   }
 }

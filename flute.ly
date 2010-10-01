@@ -87,7 +87,7 @@ fluteNotes = {
   \relative d'' {
     \time 7/4 d1..\pp~ | d1~ d8 r r4 r | \time 3/4 d8.( c16 b8. a16 g8. ef16) |
     % MS p. 11
-    d='8 r r4 r | R2. | \time 4/4 R1 | \time 3/4 R2. | \time 4/4 R1 |
+    d='8 r r4 r | R2. | \time 4/4 R1 | \time 3/4 R2.*3 | \time 4/4 R1 |
   }
   \relative d''' {
     r4 \grace { d16[( g] } ef8-.) d-. r d,-. ef-. r | R1 | 

@@ -91,7 +91,7 @@ celloNotes = {
     \time 3/4 R2.*2 |
     % MS p. 11
     d,=8.(\pp c16 b8. a16 g8. ef16) |
-    \time 4/4 d=,1~ | \time 3/4 d2. |
+    \time 4/4 d=,1~ | \time 3/4 d2.~ | d2.~ |d2.~ |
     \time 4/4 d1~ | d1~ | d1 | r1\fermata \bar "|."
   }
 }

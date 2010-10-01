@@ -81,7 +81,8 @@ violinNotes = {
     \time 3/4 d8 r r4 r | R2.*2 |
   }
   \relative g' {
-    \time 4/4 r2 r4 g8^\conSord g | \time 3/4 af4. f8 <f bf> <f a> |
+    \time 4/4 r2 r4 g8^\conSord g |
+    \time 3/4 g4. ef8 g a | b2 g8 g | af4. f8 <f bf> <f a> |
     \time 4/4 g8-- g2..~ | g1~ | g2 r |
   }
   \override Hairpin #'circled-tip = ##t

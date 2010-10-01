@@ -152,7 +152,7 @@ harpNotesRight = {
     \time 4/4 <g c, g>1\arpeggio\p | d'=''4\flageolet\laissezVibrer\pp r r2 |
     \time 7/4 d2\flageolet d'2~\flageolet d2. |
     d,2\flageolet_\markup \pedalChange {A \flat} d'2~\flageolet d2. |
-    \time 3/4 R2.*3 | \time 4/4 R1 | \time 3/4 R2. | \time 4/4 R1*3 |
+    \time 3/4 R2.*3 | \time 4/4 R1 | \time 3/4 R2.*3 | \time 4/4 R1*3 |
     \arpeggioBracket
     <d='''\flageolet d,\flageolet>4\arpeggio\laissezVibrer r r2\fermata \bar "|."
   }
@@ -328,7 +328,7 @@ harpNotesLeft = {
   }
   \relative d, {
     % MS p. 11
-    \time 4/4 \clef bass <d d,>1^\ppp\laissezVibrer | \time 3/4 R2. |
+    \time 4/4 \clef bass <d d,>1^\ppp\laissezVibrer | \time 3/4 R2.*3 |
     \time 4/4 r4 q2 <g g,>4~ | q4 <d d,>2 <g g,>4~ | q4 <d d,>2 <g g,>4 | R1\fermata \bar "|."
   }
 }
