@@ -20,6 +20,8 @@
 \include "cello.ly"
 \include "harp.ly"
 
+#(set-global-staff-size 18)
+
 staffFlute = \new Staff {
 	\time 4/4
 	\set Staff.instrumentName = "Flute"
