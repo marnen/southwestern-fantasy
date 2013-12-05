@@ -30,6 +30,11 @@ tempoIo = {
   \tempo "Tempo Iº" 4 = 63
 }
 
+moreBreaks = {
+  \override Beam #'breakable = ##t
+  \override Glissando #'breakable = ##t
+}
+
 tempoMeter = {
   \andante
   \time 4/4

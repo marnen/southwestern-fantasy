@@ -126,11 +126,11 @@ basicScore = <<
   \basicScore
   
   \layout {
+    \moreBreaks
     \context {
       \Staff
       extraNatural = ##f
       \override TimeSignature #'style = #'numbered
-      \override Glissando #'breakable = ##t 
     }
   }
 }

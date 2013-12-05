@@ -212,7 +212,9 @@ harpNotesLeft = {
   \repeat unfold 5 \dcsL
   % now in middle of 3/2 measure!
   \relative d, {
-    r8 d cs2 \glissando \bar "||"
+    r8 d cs2
+    -\tweak #'breakable ##f % this one doesn't want to slope the right way when broken 
+    \glissando \bar "||"
   }
   
   \key bf \major

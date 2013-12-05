@@ -7,4 +7,5 @@ partDefaults = {
   \accidentalStyle "modern"
   \compressFullBarRests
   \numericTimeSignature
+  \moreBreaks
 }
