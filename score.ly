@@ -32,18 +32,20 @@
 #(set-global-staff-size 18)
 
 \pageBreak
-staffFlute = \new Staff {
+staffFlute = \new Staff \with {
   \time 4/4
-  \set Staff.instrumentName = "Flute"
-  \set Staff.shortInstrumentName = "Fl."
-  \set Staff.midiInstrument = "flute"
+  instrumentName = "Flute"
+  shortInstrumentName = "Fl."
+  midiInstrument = "flute"
+} {
   \clef treble
   \fluteNotes
 }
-staffClarinet = \new Staff {
-  \set Staff.instrumentName = "Clarinet in A"
-  \set Staff.shortInstrumentName = "Cl. (A)"
-  \set Staff.midiInstrument = "clarinet"
+staffClarinet = \new Staff \with {
+  instrumentName = "Clarinet in A"
+  shortInstrumentName = "Cl. (A)"
+  midiInstrument = "clarinet"
+} {
   \clef treble
   \tag #'transposed {
     \transpose a, c {
@@ -54,33 +56,37 @@ staffClarinet = \new Staff {
     \clarinetNotes
   }
 }
-staffViolin = \new Staff {
-  \set Staff.instrumentName = "Violin"
-  \set Staff.shortInstrumentName = "Vln."
-  \set Staff.midiInstrument = "violin"
+staffViolin = \new Staff \with {
+  instrumentName = "Violin"
+  shortInstrumentName = "Vln."
+  midiInstrument = "violin"
+} {
   \clef treble
   \violinNotes
 }
-staffViola = \new Staff {
-  \set Staff.instrumentName = "Viola"
-  \set Staff.shortInstrumentName = "Vla."
-  \set Staff.midiInstrument = "viola"
+staffViola = \new Staff \with {
+  instrumentName = "Viola"
+  shortInstrumentName = "Vla."
+  midiInstrument = "viola"
+} {
   \clef alto
   \violaNotes
 }
-staffCello = \new Staff {
-  \set Staff.instrumentName = "Violoncello"
-  \set Staff.shortInstrumentName = "Vc."
-  \set Staff.midiInstrument = "cello"
+staffCello = \new Staff \with {
+  instrumentName = "Violoncello"
+  shortInstrumentName = "Vc."
+  midiInstrument = "cello"
+} {
   \clef bass
   \celloNotes
 }
 
-staffHarp = \new PianoStaff {
-  \set PianoStaff.midiInstrument = #"orchestral harp"
-  \set PianoStaff.instrumentName = #"Harp"
-  \set PianoStaff.shortInstrumentName = #"Hp."
-  \set PianoStaff.connectArpeggios = ##t
+staffHarp = \new PianoStaff \with {
+  midiInstrument = #"orchestral harp"
+  instrumentName = #"Harp"
+  shortInstrumentName = #"Hp."
+  connectArpeggios = ##t
+} {
   <<
     \context Staff = "RH" {  % Right hand 
                              \clef treble
