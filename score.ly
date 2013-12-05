@@ -33,13 +33,15 @@
 
 \pageBreak
 staffFlute = \new Staff \with {
-  \time 4/4
   instrumentName = "Flute"
   shortInstrumentName = "Fl."
   midiInstrument = "flute"
 } {
   \clef treble
-  \fluteNotes
+  <<
+    \tempoMeter
+    \fluteNotes
+  >>
 }
 staffClarinet = \new Staff \with {
   instrumentName = "Clarinet in A"
@@ -101,7 +103,6 @@ staffHarp = \new PianoStaff \with {
 
 basicScore = <<
   \accidentalStyle #'Score "modern"
-  \andante
   \new StaffGroup <<
     \staffFlute
     \staffClarinet
