@@ -18,16 +18,16 @@
 \include "english.ly"
 
 % Global definitions
-\include "globals.ly"
+\include "globals.ily"
 \include "book-titling.ily"
 
 % Include notes files for the various parts
-\include "flute.ly"
-\include "clarinet.ly"
-\include "violin.ly"
-\include "viola.ly"
-\include "cello.ly"
-\include "harp.ly"
+\include "flute.ily"
+\include "clarinet.ily"
+\include "violin.ily"
+\include "viola.ily"
+\include "cello.ily"
+\include "harp.ily"
 
 #(set-global-staff-size 18)
 
