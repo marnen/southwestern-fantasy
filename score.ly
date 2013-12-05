@@ -1,5 +1,5 @@
 % Created on Wed Sep 22 15:55:48 EDT 2010
-\version "2.13.31"
+\version "2.16.0"
 
 \header {
   title = "Fantasy on Southwestern Folk Songs" 
@@ -94,7 +94,7 @@ staffHarp = \new PianoStaff {
 }
 
 basicScore = <<
-  #(set-accidental-style 'modern 'Score)
+  \accidentalStyle #'Score "modern"
   \andante
   \new StaffGroup <<
     \staffFlute
