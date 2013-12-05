@@ -46,9 +46,7 @@ staffClarinet = \new Staff \with {
 } {
   \clef treble
   \tag #'transposed {
-    \transpose a, c {
-      \clarinetNotes
-    }
+    \transposedClarinetNotes
   }
   \tag #'concert-pitch {
     \clarinetNotes
@@ -87,12 +85,12 @@ staffHarp = \new PianoStaff \with {
 } {
   <<
     \context Staff = "RH" {  % Right hand 
-                             \clef treble
-                             \harpNotesRight
+      \clef treble
+      \harpNotesRight
     }
     \context Staff = "LH" {  % Left hand 			
-                             \clef bass
-                             \harpNotesLeft
+      \clef bass
+      \harpNotesLeft
     }
   >>
 }

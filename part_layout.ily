@@ -1,14 +1,10 @@
 \version "2.16.2"
 
-\header {
-  composer = "Marnen E. Laibow-Koser"
-  instrument = \instrumentName
-}
+\include "part_defaults.ily"
 
 \score {
   \new Staff {
-    \accidentalStyle "voice"
-    \compressFullBarRests
+    \partDefaults
     <<
       \tempoMeter
       \partNotes

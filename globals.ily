@@ -31,7 +31,6 @@ tempoIo = {
 }
 
 tempoMeter = {
-  \numericTimeSignature
   \andante
   \time 4/4
   s1*3 |

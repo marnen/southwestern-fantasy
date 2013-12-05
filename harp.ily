@@ -1,5 +1,7 @@
 \version "2.16.0"
 
+instrumentName = "Harp"
+
 dcsR = { r8 d'-.([ cs'-.)] r }
 dcsL = { r8 d,-.([ cs-. cs,-.)] }
 
@@ -9,41 +11,41 @@ harpNotesRight = {
   \relative d''' {
     % MS p. 1
     d4\laissezVibrer\flageolet\pp_\markup { \harp-pedal #"---|^---" } r r2 | R1*2 |
-    \time 3/4 R2.*4 |
-    \time 4/4 R1 | \time 3/4 R2. |
+    R2.*4 |
+    R1 | R2. |
     % MS p. 2
-    R2. | \time 4/4 R1 | \time 7/8 R1*7/8 |
+    R2. | R1 | R1*7/8 |
   }
   d''4 \relative f {
     <f gf'>2\ppp_\markup \pedalChange {G \flat} <g f'>2_\markup \pedalChange {G \natural} |
     <gs= ef'>4_\markup \pedalChange {G \sharp} <a d> r2\p r4 |
-    \time 3/4 r8\p_\markup \column {\pedalChange {G \flat} \pedalChange {B \flat}} \clef bass <f= gf c>4 <f= gf c> <f= gf c>8 |
+    r8\p_\markup \column {\pedalChange {G \flat} \pedalChange {B \flat}} \clef bass <f= gf c>4 <f= gf c> <f= gf c>8 |
     r8_\markup \pedalChange {F \flat} <ef= ff bf ef='>4 <ef ff bf ef> <ef ff bf ef>8 |
     r8\<_\markup \column {\pedalChange {G \natural} \pedalChange {B \natural}} <g= c ff>4 <g c ff> <g c ff>8 |
-    \time 7/8 r8_\markup \column {\pedalChange {G \flat} \pedalChange {C \sharp}} <gf b ff'>4 <gf b ff'> <gf b ff'> |
-    \time 4/4 r4\!\f c,=16 ef g b \clef treble c ef g b c ef g b |
-    \time 7/8 \set beatStructure = #'(2 2 3) \ottava #1 c=''' g' b ef='''' <d,=''' g b d>4 \ottava #0 r r8 |
-    \time 4/4 R1 |
+    r8_\markup \column {\pedalChange {G \flat} \pedalChange {C \sharp}} <gf b ff'>4 <gf b ff'> <gf b ff'> |
+    r4\!\f c,=16 ef g b \clef treble c ef g b c ef g b |
+    \set beatStructure = #'(2 2 3) \ottava #1 c=''' g' b ef='''' <d,=''' g b d>4 \ottava #0 r r8 |
+    R1 |
   }
   \relative g''' {
     r4 \ottava #1 \grace { g32([ d' g,] } ef8\p)-. d-. \ottava #0 r d,-. ef'!-. r |
-    \time 3/4 d='''8-. r r4 r |
+    d='''8-. r r4 r |
   }
   % MS p. 4
   \relative g' {
     \arpeggioNormal
-    \time 4/4 r8 <g c ef g>--\arpeggio <b ef g b>--\arpeggio <c ef g c>--\arpeggio <d g b d>4\arpeggio r8 <g b> |
+    r8 <g c ef g>--\arpeggio <b ef g b>--\arpeggio <c ef g c>--\arpeggio <d g b d>4\arpeggio r8 <g b> |
     <<
       { <f='' a>4._\markup \pedalChange {F \natural} <g d'>8 <bf fs'>4._\markup \column {\pedalChange {F \sharp} \pedalChange {B \flat}} <c e!>8_\markup \pedalChange {E \natural} }
       { s2 s8 s4._\markup \pedalChange {E \sharp} }
     >> |
-    \time 3/4 <cs=''' d>2_\markup \pedalChange {C \sharp} r4 |
+    <cs=''' d>2_\markup \pedalChange {C \sharp} r4 |
   }
   \relative f' {
     r8 <fs a>4\p <fs a> <es b'>8_\markup \pedalChange {E \sharp} |
-    \time 4/4 r8 <ds g>4._\markup \pedalChange {D \sharp} r4 <f a>_\markup \pedalChange {F \natural} |
-    \time 3/4 r8 <af=' c>4_\markup \pedalChange {A \flat} <e! c'>_\markup \pedalChange {E \natural} <g=' d'>8_\markup \pedalChange {D \natural} |
-    \time 4/4 r8 <gf bf>4._\markup \column {\pedalChange {G \flat} \pedalChange {B \flat}} r4 <gf bf> |
+    r8 <ds g>4._\markup \pedalChange {D \sharp} r4 <f a>_\markup \pedalChange {F \natural} |
+    r8 <af=' c>4_\markup \pedalChange {A \flat} <e! c'>_\markup \pedalChange {E \natural} <g=' d'>8_\markup \pedalChange {D \natural} |
+    r8 <gf bf>4._\markup \column {\pedalChange {G \flat} \pedalChange {B \flat}} r4 <gf bf> |
     % MS p. 5
     r8 <gf=' bf> <d=' gf bf d>4~\arpeggio <d gf bf d>8 <af'=' c e>\< <bf d fs>_\markup \pedalChange {E \flat} <b ef g>_\markup \column {\pedalChange {G \natural} \pedalChange {B \natural}} |
     <cs='' fs as>4 <cs as' cs>2.~\f\> | 
@@ -51,14 +53,12 @@ harpNotesRight = {
     <cs as' cs>1 |
     R1\! |
   }
-  \time 3/2
   <<
     { s8 s\p s4*5 }
     { \repeat unfold 3 \dcsR }
   >> \bar "||"
   
   \key fs \major
-  \time 7/4
   \repeat unfold 7 \dcsR | % 2 measures
   % MS p. 6
   \repeat unfold 7 \dcsR | % 2 measures
@@ -80,7 +80,7 @@ harpNotesRight = {
     {
       \transpose d' ff' { \repeat unfold 3 \dcsR } r8 d'-.[( |
       \accel
-      \time 3/2 cs'-.]) r \dcsR \dcsR r4
+      cs'-.]) r \dcsR \dcsR r4
     }
     { s1.. | s4 s4\< s4. s8_\markup \pedalChange {A \natural} s2\f_\markup \pedalChange {F \natural} }
   >> \bar "||"
@@ -88,14 +88,12 @@ harpNotesRight = {
     
   \agitato
   \key bf \major
-  \time 7/4
   \relative b''{
     <bf d>4--_\markup \column {\pedalChange {G \flat} \pedalChange {B \flat}} q4-- q-- <af c>--_\markup \column {\pedalChange {A \flat} \pedalChange {C \natural}} <cf ef>8.(_\markup \pedalChange {C \flat} <bf d>16 <af c>4)_\markup \pedalChange {C \natural} f,=' \glissando |
     % MS p. 7
     <cf''=''' ef>4--_\markup \pedalChange {C \flat} q4-- q-- <bf d>-- <df f>8.(_\markup \pedalChange {D \flat} <cf ef>16 <bf d>4)_\markup \pedalChange {D \natural} f,='_\markup \pedalChange {C \natural} \glissando |
     <bf'='' d>4-- q4-- q-- <af c>-- <cf ef>8.(_\markup \pedalChange {C \flat} <bf d>16 <af c>4)_\markup \pedalChange {C \natural} f,=' \glissando |
     <cf''=''' ef>4--_\markup \pedalChange {C \flat} q4-- q-- <bf d>-- <df f>8.(_\markup \pedalChange {D \flat} <cf ef>16 <bf d>4)_\markup \pedalChange {D \natural} f,='_\markup \pedalChange {C \natural} \glissando |
-    \time 3/2
     <<
       { <df''=''' f>4-- q-- q-- <c e>4-- <ef g>8.( <df f>16 <c e>8. <d f>16 }
       { s4._\markup \column {\pedalChange {A \natural} \pedalChange {D \flat}} s4_\markup \pedalChange {G \natural} s8 s4_\markup \pedalChange {E \natural} s8_\markup \pedalChange {E \flat} s8_\markup \pedalChange {B \natural} s4_\markup \pedalChange {E \natural}}
@@ -107,52 +105,51 @@ harpNotesRight = {
       
     \tempoIo
     \key g \major
-    \time 4/4
     <c''=''' ef g b>8 r <c,='' ef g b>8.\ff q16 q4. <b c ef g>8-- |
     <c ef g b>-- <ef g a c>-- <d g b d>2 <d g b>4~ |
     % MS p. 8
-    \time 3/4 q8 q <d ef a c>4 r |
-    \time 4/4 \ottava #1 <d'=''' b' d>8 <c a' c> <b g' b>4 \ottava #0 r2 |
+    q8 q <d ef a c>4 r |
+    \ottava #1 <d'=''' b' d>8 <c a' c> <b g' b>4 \ottava #0 r2 |
   }
   \relative e'' {
-    \time 3/4 r4 r8 ef32 g b ef g8^\lh r | \time 4/4 r4 r8 b,,='32 ef g b <ef g b>8^\lh r8 r4 |
-    \time 5/4 R1*5/4 |
+    r4 r8 ef32 g b ef g8^\lh r | r4 r8 b,,='32 ef g b <ef g b>8^\lh r8 r4 |
+    R1*5/4 |
   }
   \relative f {
-    \time 4/4 fs32_\markup \pedalChange {B \flat} bf d fs bf d fs bf d2 r4 |
+    fs32_\markup \pedalChange {B \flat} bf d fs bf d fs bf d2 r4 |
   }
   \relative g {
-    \time 3/4 << {r4} {s8 s8\mf_\markup \pedalChange {B \natural}} >> g32 b ef g r8 r4 |
-    \time 7/8 r4 g,=32 b ef g r8 <d''=''' g b> r r |
+    << {r4} {s8 s8\mf_\markup \pedalChange {B \natural}} >> g32 b ef g r8 r4 |
+    r4 g,=32 b ef g r8 <d''=''' g b> r r |
   }
   \relative e'' {
-    \time 3/4 r8 <ef g b> <f a c>4_\markup \pedalChange {F \natural} r |
+    r8 <ef g b> <f a c>4_\markup \pedalChange {F \natural} r |
   }
   \relative d'''' {
-    \time 4/4 r4 \ottava #1 d32 b g ef \ottava #0 r8 d,=''32 b g ef r8 r4 |
+    r4 \ottava #1 d32 b g ef \ottava #0 r8 d,=''32 b g ef r8 r4 |
   }
   \relative g, {
-    \time 3/4 r8\mf \clef bass g32 b ef g r8 \clef treble g32 b ef g r8 g32 b ef g='' |
-    \time 7/8 r8 d=''32 g b ef r8 \ottava #1 d='''32 g b ef <d b g d>4 \ottava #0 r8
+    r8\mf \clef bass g32 b ef g r8 \clef treble g32 b ef g r8 g32 b ef g='' |
+    r8 d=''32 g b ef r8 \ottava #1 d='''32 g b ef <d b g d>4 \ottava #0 r8
   }
   \relative f'' {
-    \time 4/4 r4 <f gf'>2_\markup \pedalChange {G \flat} <ef ff'>4_\markup \column {\pedalChange {F \flat} \pedalChange {B \flat}} |
-    \time 3/4 r4 <d='' d'>2 |
+    r4 <f gf'>2_\markup \pedalChange {G \flat} <ef ff'>4_\markup \column {\pedalChange {F \flat} \pedalChange {B \flat}} |
+    r4 <d='' d'>2 |
     % MS p. 9
-    \time 7/4 R1..*2 |
+    R1..*2 |
   }
   \relative c {
-    \time 4/4 r4 \clef bass c16\f ef g b \clef treble c ef g b c ef g b |
-    \time 5/4 \ottava #1 c=''' g' b ef <d='''' b g d>2~ q4 \ottava #0 r | \time 4/4 R1 |
+    r4 \clef bass c16\f ef g b \clef treble c ef g b c ef g b |
+    \ottava #1 c=''' g' b ef <d='''' b g d>2~ q4 \ottava #0 r | R1 |
     % MS p. 10
-    \time 3/2 R1. |
+    R1. |
   }
   \relative g' {
     \crossStaffBracket
-    \time 4/4 <g c, g>1\arpeggio\p | d'=''4\flageolet\laissezVibrer\pp r r2 |
-    \time 7/4 d2\flageolet d'2~\flageolet d2. |
+    <g c, g>1\arpeggio\p | d'=''4\flageolet\laissezVibrer\pp r r2 |
+    d2\flageolet d'2~\flageolet d2. |
     d,2\flageolet_\markup \pedalChange {A \flat} d'2~\flageolet d2. |
-    \time 3/4 R2.*3 | \time 4/4 R1 | \time 3/4 R2.*3 | \time 4/4 R1*3 |
+    R2.*3 | R1 | R2.*3 | R1*3 |
     \arpeggioBracket
     <d='''\flageolet d,\flageolet>4\arpeggio\laissezVibrer r r2\fermata \bar "|."
   }
@@ -169,31 +166,31 @@ harpNotesLeft = {
   \relative d,, {
     \arpeggioBracket
     r4 \clef bass <d d'>4~\p\arpeggio <d d'>8 ef-- g-- b-- |
-    \time 3/4 d=,-- ef-- g-- b-- d-- ef-- |
+    d=,-- ef-- g-- b-- d-- ef-- |
     d,=,4 d,2\laissezVibrer | R2.*2 |
-    \time 4/4 r4 <d d'>4~\arpeggio <d d'>8 ef-- g-- b-- |
-    \time 3/4 d=,-- ef-- g-- b-- d-- ef-- |
+    r4 <d d'>4~\arpeggio <d d'>8 ef-- g-- b-- |
+    d=,-- ef-- g-- b-- d-- ef-- |
     % MS p. 2
     d,=,4 d,2\laissezVibrer |
-    \time 4/4 r4 ef=,,4~ ef8 g b d |
-    \time 7/8 \set beatStructure = #'(4 3) ef=, g b d ef g b |
-    \time 5/4 d='4 <d,,,=,, d'>1\arpeggio | r2 <d d'>2. |
-    \time 3/4 <f f'>2. | <ef ef'>2. | <d d'>2. |
-    \time 7/8 cs'!=,2.. |
-    \time 4/4 c4 c,2.~ | \time 7/8 c4 <d d'> r r8 | \time 4/4 R1 |
+    r4 ef=,,4~ ef8 g b d |
+    \set beatStructure = #'(4 3) ef=, g b d ef g b |
+    d='4 <d,,,=,, d'>1\arpeggio | r2 <d d'>2. |
+    <f f'>2. | <ef ef'>2. | <d d'>2. |
+    cs'!=,2.. |
+    c4 c,2.~ | c4 <d d'> r r8 | R1 |
   }
   \relative d, {
     r4 <d d'>2.~ |
-    \time 3/4 <d d'>4 r r |
+    <d d'>4 r r |
   }
   % MS p. 4
   \relative g {
     \arpeggioNormal
-    \time 4/4 r8 \clef treble <g c ef>--\arpeggio <b ef g>\arpeggio <c ef g>--\arpeggio <d g b>4\arpeggio r |
+    r8 \clef treble <g c ef>--\arpeggio <b ef g>\arpeggio <c ef g>--\arpeggio <d g b>4\arpeggio r |
     r8 <d=' g b> <ef f a>4 r8 <es g d'> <g bf fs'>4 |
   }
   \relative d, {
-    \time 3/4 r4 \clef bass <d d'>2 | R2. | \time 4/4 R1 | \time 3/4 R2. | \time 4/4 R1 |
+    r4 \clef bass <d d'>2 | R2. | R1 | R2. | R1 |
   }
   \relative c' {
     % MS p. 5
@@ -203,10 +200,9 @@ harpNotesLeft = {
   \relative c, {
     \clef bass <cs cs'>2.~ | <cs cs'>1 | R1 |
   }
-  \time 3/2 \repeat unfold 3 \dcsL \bar "||"
+  \repeat unfold 3 \dcsL \bar "||"
   
   \key fs \major
-  \time 7/4
   \repeat unfold 7 \dcsL | % 2 measures
   % MS p. 6
   \repeat unfold 7 \dcsL | % 2 measures
@@ -220,7 +216,6 @@ harpNotesLeft = {
   }
   
   \key bf \major
-  \time 7/4
   \clef treble
   \relative b' {
     <<
@@ -244,7 +239,7 @@ harpNotesLeft = {
         <cf='' ef>4-- q-- q-- <bf d>-- <df f>8.( <cf ef>16 <bf d>4) r |
         <bf=' d>4-- q-- q-- <af c>-- <cf ef>8.( <bf d>16 <af c>4) r |
         <cf ef>4-- q-- q-- <bf d>-- <df f>8.( <cf ef>16 <bf d>4) r |
-        \time 3/2 <df='' f>4-- q-- q-- <c e>-- <ef g>8.( <df f>16 <c e>8. <df f>16 |
+        <df='' f>4-- q-- q-- <c e>-- <ef g>8.( <df f>16 <c e>8. <df f>16 |
         <ef g>4) q-- g-- f8.( g16 <f a>4) r
       }
       \new Voice {
@@ -258,13 +253,12 @@ harpNotesLeft = {
     >>
     \oneVoice
     \key g \major
-    \time 4/4
     <c='' ef g b>8 r
   }
   
   \relative c, {
     \clef bass <c c'>2. | r4 <d, d'>8 <d' d'> <d' d'>2 |
-    \time 3/4 r4 d,=,2 \glissando |
+    r4 d,=,2 \glissando |
   }
   <<
       { \change Staff = "RH" \hideNotes d'''4 \unHideNotes \change Staff = "LH" }
@@ -275,60 +269,60 @@ harpNotesLeft = {
   \relative b {
     \clef treble <b g'>8-- <c a'>-- <d b'>4 r |
   }
-  \time 3/4 \clef bass <c, c>4
+  \clef bass <c, c>4
   \relative c' {
     \clef treble c32 ef g b r8 r4
   } |
-  \time 4/4 r8 \clef bass <d, d>8--
+  r8 \clef bass <d, d>8--
   \relative g {
     \clef treble g32 b ef g r8 r2
   } |
-  \time 5/4 R1*5/4 |
-  \time 4/4 r8 \clef bass <d, d>8 \clef treble d''2 r4 |
+  R1*5/4 |
+  r8 \clef bass <d, d>8 \clef treble d''2 r4 |
   \relative c, {
-    \time 3/4 r8 \clef bass c32 g' b ef r8
+    r8 \clef bass c32 g' b ef r8
   }
   \relative b' {
     \clef treble <b ef g>8 r4 |
   }
   \relative d, {
-    \time 7/8 r8 \clef bass d32 g b ef r8 
+    r8 \clef bass d32 g b ef r8 
   }
   \relative b' {
     \clef treble b32 ef g b r4 r8 |
   }
   \relative e' {
-    \time 3/4 r8 <ef g b>8 <f a c>4 r |
+    r8 <ef g b>8 <f a c>4 r |
   }
   \relative d''' {
-    \time 4/4 r4 r8 d32 b g ef r8 \clef bass d,32 b g e d=4 |
+    r4 r8 d32 b g ef r8 \clef bass d,32 b g e d=4 |
   }
   \relative e, {
-    \time 3/4 \clef bass ef32 g b ef r8 ef32 g b ef r8 \clef treble ef32 g b ef r8 |
-    \time 7/8 d,='32 g b ef r8 d32 g b ef r8 r4 r8 |
+    \clef bass ef32 g b ef r8 ef32 g b ef r8 \clef treble ef32 g b ef r8 |
+    d,='32 g b ef r8 d32 g b ef r8 r4 r8 |
   }
   \relative a' {
-    \time 4/4 r4 <a ef>2 <bf gf'>4 |
+    r4 <a ef>2 <bf gf'>4 |
   }
-  \time 3/4 r4 \clef bass <d, d>2 |
+  r4 \clef bass <d, d>2 |
   % MS p. 9
-  \time 7/4 R1..*2 |
+  R1..*2 |
   \relative c, {
-    \time 4/4 r4 <c c,>2. | \time 5/4 r4 <d d,>8-- ef''='-- <d d,>4 r r | 
-    \time 4/4 R1 | \time 3/2 R1. |
+    r4 <c c,>2. | r4 <d d,>8-- ef''='-- <d d,>4 r r | 
+    R1 | R1. |
   }
   \relative c {
     % MS p. 10
     \crossStaffBracket
     <c g c,>1\arpeggio | d4\laissezVibrer r r2 |
-    \time 7/4 R1.. |
+    R1.. |
   }
   \relative e'' {
-    \clef treble <ef af c>1 <d g b>2. | \time 3/4 R2.*3 |
+    \clef treble <ef af c>1 <d g b>2. | R2.*3 |
   }
   \relative d, {
     % MS p. 11
-    \time 4/4 \clef bass <d d,>1^\ppp\laissezVibrer | \time 3/4 R2.*3 |
-    \time 4/4 r4 q2 <g g,>4~ | q4 <d d,>2 <g g,>4~ | q4 <d d,>2 <g g,>4 | R1\fermata \bar "|."
+    \clef bass <d d,>1^\ppp\laissezVibrer | R2.*3 |
+    r4 q2 <g g,>4~ | q4 <d d,>2 <g g,>4~ | q4 <d d,>2 <g g,>4 | R1\fermata \bar "|."
   }
 }
