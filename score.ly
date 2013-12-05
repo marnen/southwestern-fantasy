@@ -1,8 +1,13 @@
 % Created on Wed Sep 22 15:55:48 EDT 2010
 \version "2.16.0"
 
+\language "english"
+
+% Global definitions
+\include "globals.ily"
+\include "book-titling.ily"
+
 \header {
-  title = "Fantasy on Southwestern Folk Songs" 
   composer = \markup {
     \center-column {
       "Marnen E. Laibow-Koser"
@@ -11,15 +16,7 @@
       "marnen@marnen.org • (845) 625-7801"
     }
   }
-  date = "September 2010"
-  copyright = "Copyright © 2010 Marnen E. Laibow-Koser (ASCAP). All rights reserved." 
-}
 
-\include "english.ly"
-
-% Global definitions
-\include "globals.ily"
-\include "book-titling.ily"
 
 % Include notes files for the various parts
 \include "flute.ily"
@@ -31,7 +28,6 @@
 
 #(set-global-staff-size 18)
 
-\pageBreak
 staffFlute = \new Staff \with {
   instrumentName = "Flute"
   shortInstrumentName = "Fl."
@@ -124,7 +120,10 @@ basicScore = <<
   }
 }
 
+\pageBreak
+
 \score {
+
   \keepWithTag #'transposed
   \basicScore
   

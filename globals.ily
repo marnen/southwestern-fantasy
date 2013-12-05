@@ -1,5 +1,14 @@
 \version "2.16.0"
 
+\language "english"
+
+\header {
+  title = "Fantasy on Southwestern Folk Songs" 
+  date = "September 2010"
+  copyright = "Copyright © 2010 Marnen E. Laibow-Koser (ASCAP). All rights reserved." 
+}
+
+
 #(define afterGraceFraction (cons 1 4))
 
 arco = \markup { arco }
@@ -22,6 +31,7 @@ tempoIo = {
 }
 
 tempoMeter = {
+  \numericTimeSignature
   \andante
   \time 4/4
   s1*3 |

@@ -1,5 +1,7 @@
 \version "2.16.0"
 
+instrumentName = "Flute"
+
 fluteNotes = {
   \key g \major
   
