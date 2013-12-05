@@ -1,3 +1,5 @@
+\version "2.16.0"
+
 %%% book-titling.ily  -- a titling stylesheet for use in books
 %%% 
 %%% Author: Nicolas Sceaux <nicolas.sceaux@free.fr>
@@ -408,7 +410,7 @@ titledPiece =
   
   %% Table of contents
   \pageBreak
-  \markuplines \table-of-contents
+  \markuplist \table-of-contents
   
   %% 1st Chapter
   \chapter "Act I"
