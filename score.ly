@@ -2,17 +2,17 @@
 \version "2.13.31"
 
 \header {
-	title = "Fantasy on Southwestern Folk Songs" 
- 	composer = \markup {
- 	  \center-column {
- 	    "Marnen E. Laibow-Koser"
- 	    "719 State Street, 1st floor"
- 	    "Albany, NY 12203"
- 	    "marnen@marnen.org • (845) 625-7801"
- 	  }
- 	}
- 	date = "September 2010"
- 	copyright = "Copyright © 2010 Marnen E. Laibow-Koser (ASCAP). All rights reserved." 
+  title = "Fantasy on Southwestern Folk Songs" 
+  composer = \markup {
+    \center-column {
+      "Marnen E. Laibow-Koser"
+      "719 State Street, 1st floor"
+      "Albany, NY 12203"
+      "marnen@marnen.org • (845) 625-7801"
+    }
+  }
+  date = "September 2010"
+  copyright = "Copyright © 2010 Marnen E. Laibow-Koser (ASCAP). All rights reserved." 
 }
 
 \include "english.ly"
@@ -33,19 +33,19 @@
 
 \pageBreak
 staffFlute = \new Staff {
-	\time 4/4
-	\set Staff.instrumentName = "Flute"
-    \set Staff.shortInstrumentName = "Fl."
-	\set Staff.midiInstrument = "flute"
-	\clef treble
+  \time 4/4
+  \set Staff.instrumentName = "Flute"
+  \set Staff.shortInstrumentName = "Fl."
+  \set Staff.midiInstrument = "flute"
+  \clef treble
   \fluteNotes
 }
 staffClarinet = \new Staff {
-	\set Staff.instrumentName = "Clarinet in A"
-    \set Staff.shortInstrumentName = "Cl. (A)"
-	\set Staff.midiInstrument = "clarinet"
-	\clef treble
-	\tag #'transposed {
+  \set Staff.instrumentName = "Clarinet in A"
+  \set Staff.shortInstrumentName = "Cl. (A)"
+  \set Staff.midiInstrument = "clarinet"
+  \clef treble
+  \tag #'transposed {
     \transpose a, c {
       \clarinetNotes
     }
@@ -55,42 +55,42 @@ staffClarinet = \new Staff {
   }
 }
 staffViolin = \new Staff {
-	\set Staff.instrumentName = "Violin"
-    \set Staff.shortInstrumentName = "Vln."
-	\set Staff.midiInstrument = "violin"
-	\clef treble
-	\violinNotes
+  \set Staff.instrumentName = "Violin"
+  \set Staff.shortInstrumentName = "Vln."
+  \set Staff.midiInstrument = "violin"
+  \clef treble
+  \violinNotes
 }
 staffViola = \new Staff {
-	\set Staff.instrumentName = "Viola"
-    \set Staff.shortInstrumentName = "Vla."
-	\set Staff.midiInstrument = "viola"
-	\clef alto
-	\violaNotes
+  \set Staff.instrumentName = "Viola"
+  \set Staff.shortInstrumentName = "Vla."
+  \set Staff.midiInstrument = "viola"
+  \clef alto
+  \violaNotes
 }
 staffCello = \new Staff {
-	\set Staff.instrumentName = "Violoncello"
-    \set Staff.shortInstrumentName = "Vc."
-	\set Staff.midiInstrument = "cello"
-	\clef bass
-	\celloNotes
+  \set Staff.instrumentName = "Violoncello"
+  \set Staff.shortInstrumentName = "Vc."
+  \set Staff.midiInstrument = "cello"
+  \clef bass
+  \celloNotes
 }
 
 staffHarp = \new PianoStaff {
-	\set PianoStaff.midiInstrument = #"orchestral harp"
-	\set PianoStaff.instrumentName = #"Harp"
-    \set PianoStaff.shortInstrumentName = #"Hp."
-	\set PianoStaff.connectArpeggios = ##t
+  \set PianoStaff.midiInstrument = #"orchestral harp"
+  \set PianoStaff.instrumentName = #"Harp"
+  \set PianoStaff.shortInstrumentName = #"Hp."
+  \set PianoStaff.connectArpeggios = ##t
   <<
-		\context Staff = "RH" {  % Right hand 
-			\clef treble
-			\harpNotesRight
-		}
-		\context Staff = "LH" {  % Left hand 			
-			\clef bass
-			\harpNotesLeft
-		}
-	>>
+    \context Staff = "RH" {  % Right hand 
+                             \clef treble
+                             \harpNotesRight
+    }
+    \context Staff = "LH" {  % Left hand 			
+                             \clef bass
+                             \harpNotesLeft
+    }
+  >>
 }
 
 basicScore = <<
@@ -110,17 +110,17 @@ basicScore = <<
 
 
 \score {
-	\keepWithTag #'concert-pitch
-	\basicScore
-	
-	\midi {
-	}
+  \keepWithTag #'concert-pitch
+  \basicScore
+  
+  \midi {
+  }
 }
 
 \score {
   \keepWithTag #'transposed
   \basicScore
-
+  
   \layout {
     \context {
       \Staff
