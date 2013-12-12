@@ -1,5 +1,10 @@
 \version "2.16.0"
 
+\include "globals.ily"
+\includeOnce "cello.ily"
+\includeOnce "clarinet.ily"
+\includeOnce "viola.ily"
+
 instrumentName = "Harp"
 
 dcsR = { r8 d'-.([ cs'-.)] r }
@@ -10,7 +15,12 @@ harpNotesRight = {
 
   \relative d''' {
     % MS p. 1
-    d4\laissezVibrer\flageolet\pp_\markup { \harp-pedal #"---|^---" } r r2 | R1*2 |
+    d4\laissezVibrer\flageolet\pp_\markup { \harp-pedal #"---|^---" } r r2 |
+    \tag #'part { \context CueVoice { \set instrumentCueName = "Cl." } }
+    \cueDuring #"clarinet" #UP {
+      R1
+    }
+    R1 |
     R2.*4 |
     R1 | R2. |
     % MS p. 2
@@ -149,7 +159,12 @@ harpNotesRight = {
     <g c, g>1\arpeggio\p | d'=''4\flageolet\laissezVibrer\pp r r2 |
     d2\flageolet d'2~\flageolet d2. |
     d,2\flageolet_\markup \pedalChange {A \flat} d'2~\flageolet d2. |
-    R2.*3 | R1 | R2.*3 | R1*3 |
+    R2.*3 | R1 | R2.*2 |
+    \tag #'part { \context CueVoice { \set instrumentCueName = "Va." } }
+    \cueDuring #"viola" #DOWN {
+      R2.
+    }
+    R1*3 |
     \arpeggioBracket
     <d='''\flageolet d,\flageolet>4\arpeggio\laissezVibrer r r2\fermata \bar "|."
   }
@@ -167,7 +182,11 @@ harpNotesLeft = {
     \arpeggioBracket
     r4 \clef bass <d d'>4~\p\arpeggio <d d'>8 ef-- g-- b-- |
     d=,-- ef-- g-- b-- d-- ef-- |
-    d,=,4 d,2\laissezVibrer | R2.*2 |
+    d,=,4 d,2\laissezVibrer | R2. |
+    \tag #'part { \context CueVoice { \set instrumentCueName = "Vc." } }
+    \cueDuring #"cello" #UP {
+      R2. |
+    }
     r4 <d d'>4~\arpeggio <d d'>8 ef-- g-- b-- |
     d=,-- ef-- g-- b-- d-- ef-- |
     % MS p. 2
@@ -198,7 +217,11 @@ harpNotesLeft = {
   }
   % Middle of measure
   \relative c, {
-    \clef bass <cs cs'>2.~ | <cs cs'>1 | R1 |
+    \clef bass <cs cs'>2.~ | <cs cs'>1 | 
+  }
+  \tag #'part { \context CueVoice { \set instrumentCueName = "Vc." } }
+  \cueDuring #"cello" #DOWN {
+    R1
   }
   \repeat unfold 3 \dcsL \bar "||"
   
@@ -310,10 +333,18 @@ harpNotesLeft = {
   }
   r4 \clef bass <d, d>2 |
   % MS p. 9
-  R1..*2 |
+  R1.. |
+  \tag #'part { \context CueVoice { \set instrumentCueName = "Va." } }
+  \cueDuring #"viola" #UP {
+    R1..
+  }
   \relative c, {
     r4 <c c,>2. | r4 <d d,>8-- ef''='-- <d d,>4 r r | 
-    R1 | R1. |
+    R1 |
+  }
+  \tag #'part { \context CueVoice { \set instrumentCueName = "Cl." } }
+  \cueDuring #"clarinet" #UP {
+    R1.
   }
   \relative c {
     % MS p. 10
