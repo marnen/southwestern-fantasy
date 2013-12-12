@@ -4,13 +4,6 @@
 
 \include "include_once.ily"
 
-\header {
-  title = "Fantasy on Southwestern Folk Songs" 
-  date = "September 2010"
-  copyright = "Copyright © 2010 Marnen E. Laibow-Koser (ASCAP). All rights reserved." 
-}
-
-
 #(define afterGraceFraction (cons 1 4))
 
 arco = \markup { arco }

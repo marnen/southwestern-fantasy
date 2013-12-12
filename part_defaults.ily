@@ -1,3 +1,5 @@
+\include "header.ily"
+
 \header {
   composer = "Marnen E. Laibow-Koser"
   instrument = \instrumentName
