@@ -19,12 +19,12 @@
 
 
 % Include notes files for the various parts
-\include "flute.ily"
-\include "clarinet.ily"
-\include "violin.ily"
-\include "viola.ily"
-\include "cello.ily"
-\include "harp.ily"
+\includeOnce "flute.ily"
+\includeOnce "clarinet.ily"
+\includeOnce "violin.ily"
+\includeOnce "viola.ily"
+\includeOnce "cello.ily"
+\includeOnce "harp.ily"
 
 #(set-global-staff-size 18)
 
