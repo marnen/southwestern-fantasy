@@ -88,11 +88,8 @@ tempoMeter = {
   \time 3/2
   s1. \bar "||"
   \time 7/4
-  s4*7*2 |
-  % p. 6 (m. 38)
-  s4*7*8 |
-  % p. 8 (m. 46)
-  s4*7 |
+  s4*7*11 |
+  % p. 8 (m. 47)
   \accel
   \time 3/2
   s1. \bar "||"
