@@ -126,6 +126,8 @@ clarinetNotes = {
   }
 }
 
+\addQuote "clarinet" \clarinetNotes
+
 transposedClarinetNotes = {
   \removeWithTag #'concert-pitch {
     \transpose a, c {

@@ -1,5 +1,9 @@
 \version "2.16.0"
 
+\include "globals.ily"
+\includeOnce "clarinet.ily"
+\includeOnce "harp.ily"
+
 instrumentName = "Violoncello"
 
 csbs = {r8 cs-.[ r8 bs,,-.]}
@@ -8,9 +12,14 @@ celloNotes = {
   \key g \major
   
   \clef bass
+  % MS p. 1
+  R1*2 |
+  \tag #'part { \context CueVoice { \set instrumentCueName = "Hp." } }
+  \transposedCueDuring #"harpL" #DOWN c'' {
+    R1
+  }
   \relative b {
-    % MS p. 1
-    R1*3 | r4 r b8._\markup { \dynamic p \italic espr. } b16 |
+    r4 r b8._\markup { \dynamic p \italic espr. } b16 |
     b4. g8 b c | d2 b8 b | c4. a8 d c | b8-- b4.~-- b4 r |
     r4 r b=8. b16 |
     % MS p. 2
@@ -36,7 +45,11 @@ celloNotes = {
     R1. \bar "||"
     
     \key fs \major
-    R1*7/4*6 | % 1 additional measure
+    R1*7/4*5 | % 1 additional measure
+    \tag #'part { \context CueVoice { \set instrumentCueName = "Cl." } }
+    \cueDuring #"clarinet" #UP {
+      R1*7/4
+    }
   }
   % BEGIN inserted material
   << { \csbs }{ s2^\pizz } >> \repeat unfold 13 \csbs | % 4 measures

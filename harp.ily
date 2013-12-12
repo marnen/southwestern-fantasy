@@ -330,3 +330,5 @@ harpNotesLeft = {
     r4 q2 <g g,>4~ | q4 <d d,>2 <g g,>4~ | q4 <d d,>2 <g g,>4 | R1\fermata \bar "|."
   }
 }
+
+\addQuote "harpL" \harpNotesLeft
