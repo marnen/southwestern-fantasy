@@ -118,3 +118,5 @@ violaNotes = {
     << {<c g'>1\fermata^\senzaSord} {s2.\> s4\!} >> \bar "|."
   }
 }
+
+\addQuote "viola" \violaNotes

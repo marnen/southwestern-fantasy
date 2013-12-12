@@ -2,6 +2,7 @@
 
 \include "globals.ily"
 \includeOnce "cello.ily"
+\includeOnce "clarinet.ily"
 \includeOnce "harp.ily"
 
 % Clarinet in A, but these notes are entered in concert pitch.

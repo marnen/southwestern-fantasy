@@ -1,5 +1,10 @@
 \version "2.16.0"
 
+\include "globals.ily"
+\includeOnce "cello.ily"
+\includeOnce "harp.ily"
+\includeOnce "viola.ily"
+
 instrumentName = "Flute"
 
 fluteNotes = {
@@ -8,9 +13,18 @@ fluteNotes = {
   \relative d'' {
     % MS p. 1
     d1~\pp | \tieDashed d~ | \tieSolid d~ | d2.~ | d2. |
-    R2.*2 | d1~_\semprepp | d2.~ |
+    R2. |
+    \tag #'part { \context CueVoice { \set instrumentCueName = "Vc." } }
+    \cueDuring #"cello" #DOWN {
+      R2.
+    }
+    d1~_\semprepp | d2.~ |
     % MS p. 2
-    d2. | R1 | R8*7 |
+    d2. | R1 |
+    \tag #'part { \context CueVoice { \set instrumentCueName = "Vla." } }
+    \cueDuring #"viola" #DOWN {
+      \set beatStructure = #'(4 3) R8*7 |
+    }
   }
   \relative f' {
     r4 fs!2(\ppp f | ef4 d) r2 r4 |
@@ -38,7 +52,11 @@ fluteNotes = {
   
   \relative f'' {
     \key fs \major
-    R1*7/4*10 | % 6 additional measures
+    R1*7/4*9 | % 6 additional measures
+    \tag #'part { \context CueVoice { \set instrumentCueName = "Cl." } }
+    \cueDuring #"clarinet" #UP {
+      R1*7/4
+    }
     % MS p. 6
     r4 r8 fss8-.\p r gs-. r as-. r b-. r4 r |
     \accel
@@ -86,8 +104,13 @@ fluteNotes = {
   \relative d'' {
     d1..\pp~ | d1~ d8 r r4 r | d8.( c16 b8. a16 g8. ef16) |
     % MS p. 11
-    d='8 r r4 r | R2. | R1 | R2.*3 | R1 |
+    d='8 r r4 r | R2. | R1 | R2.*3 |
   }
+  \tag #'part { \context CueVoice { \set instrumentCueName = "Hp." } }
+  \cueDuringWithClef #"harpL" #DOWN #"bass" {
+    R1
+  }
+
   \relative d''' {
     r4 \grace { d16[( g] } ef8-.) d-. r d,-. ef-. r | R1 | 
   }
