@@ -117,3 +117,5 @@ fluteNotes = {
   \override Hairpin #'circled-tip = ##t
   << {d''\fermata} {s2.\> s4\!} >> \bar "|."
 }
+
+\addQuote "flute" \fluteNotes
