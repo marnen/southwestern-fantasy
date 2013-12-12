@@ -16,7 +16,7 @@ violaNotes = {
   % MS p. 2
   <c'\harmonic g'\harmonic>2. | R1 |
   \relative d {
-    \set beatStructure = #'(4 3) d8-- ef-- g-- b-- d-- ef-- g-- |
+    d8-- ef-- g-- b-- d-- ef-- g-- |
     d'=''2~ d2.~ | d1 r4 | 
   }
   \relative f' {

@@ -50,21 +50,21 @@ tempoMeter = {
   % p. 2 (m. 11)
   \time 4/4
   s1 |
-  \set Timing.beatStructure = #'(4 3)
   \time 7/8
+  \set Timing.beatStructure = #'(4 3)
   s8*7 |
   \time 5/4
   s4*5*2 |
   \time 3/4
   s2.*3 |
   % p. 3 (m. 18)
-  \set Timing.beatStructure = #'(2 2 3)
   \time 7/8
+  \set Timing.beatStructure = #'(2 2 3)
   s8*7 |
   \time 4/4
   s1 |
-  \set Timing.beatStructure = #'(2 2 3)
   \time 7/8
+  \set Timing.beatStructure = #'(2 2 3)
   s8*7 |
   \time 4/4
   s1*2 |
@@ -123,8 +123,8 @@ tempoMeter = {
   s1 |
   \time 3/4
   s2. |
-  \set Timing.beatStructure = #'(2 2 3)
   \time 7/8
+  \set Timing.beatStructure = #'(2 2 3)
   s8*7 |
   % p. 13 (m. 64)
   \time 3/4
@@ -133,8 +133,8 @@ tempoMeter = {
   s1 |
   \time 3/4
   s2. |
-  \set Timing.beatStructure = #'(2 2 3)
   \time 7/8
+  \set Timing.beatStructure = #'(2 2 3)
   s8*7 |
   % p. 14 (m. 68)
   \time 4/4
