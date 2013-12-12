@@ -108,3 +108,5 @@ celloNotes = {
     d1~ | d1~ | d1 | r1\fermata \bar "|."
   }
 }
+
+\addQuote "cello" \celloNotes

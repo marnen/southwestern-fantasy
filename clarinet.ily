@@ -1,5 +1,9 @@
 \version "2.16.0"
 
+\include "globals.ily"
+\includeOnce "cello.ily"
+\includeOnce "harp.ily"
+
 % Clarinet in A, but these notes are entered in concert pitch.
 instrumentName = "Clarinet in A"
 
@@ -9,8 +13,13 @@ clarinetNotes = {
   \relative g'' {
     % MS p. 1
     R1 | r4 \grace { g32([\pp d' g,] } ef8)-. d-. r d,='-. ef'=''-. r | d-. r r4 r2 |
-    R2.*4 |
+    R2.*3 |
   }
+  \tag #'part { \context CueVoice { \set instrumentCueName = "Vc." } }
+  \transposedCueDuring #"cello" #DOWN c' {
+    R2.
+  }
+
   \relative d {
     r4 d2.~_\semprepp | d2 d8-- ef-- |
     % MS p. 2
@@ -47,7 +56,11 @@ clarinetNotes = {
     R1 |
   }
   \relative f {
-    r2 r r4 fs8.\p( gs16) \bar "||"
+    \tag #'part { \context CueVoice { \set instrumentCueName = "Hp." } }
+    \transposedCueDuring #"harpL" #DOWN c'' {
+      r2 r 
+    }
+    r4 fs8.\p( gs16) \bar "||"
     \key fs \major
     as4-.( as-. as-. gs-.) b8.( as16 gs4) gs8.( as16) |
     b4-.( b-. b-. as-.) cs8.( b16 as4) fs8.( gs16) |
