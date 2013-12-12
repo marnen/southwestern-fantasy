@@ -95,19 +95,23 @@ staffHarp = \new PianoStaff \with {
   >>
 }
 
-basicScore = <<
-  \accidentalStyle #'Score "modern"
-  \new StaffGroup <<
-    \staffFlute
-    \staffClarinet
-  >>
-  \new StaffGroup <<
-    \staffViolin
-    \staffViola
-    \staffCello
-  >>
-  \staffHarp
->>
+basicScore = \removeWithTag #'part {
+  \killCues {
+    <<
+      \accidentalStyle #'Score "modern"
+      \new StaffGroup <<
+        \staffFlute
+        \staffClarinet
+      >>
+      \new StaffGroup <<
+        \staffViolin
+        \staffViola
+        \staffCello
+      >>
+      \staffHarp
+    >>
+  }
+}
 
 
 \score {
