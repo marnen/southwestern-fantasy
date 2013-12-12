@@ -5,6 +5,7 @@
 
 partDefaults = {
   \accidentalStyle "modern"
+  \override MultiMeasureRest #'expand-limit = 8
   \compressFullBarRests
   \numericTimeSignature
   \moreBreaks

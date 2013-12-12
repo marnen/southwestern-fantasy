@@ -1,5 +1,10 @@
 \version "2.16.0"
 
+\include "globals.ily"
+\includeOnce "cello.ily"
+\includeOnce "clarinet.ily"
+\includeOnce "flute.ily"
+
 instrumentName = "Viola"
 
 violaNotes = {
@@ -11,12 +16,20 @@ violaNotes = {
   <c'\harmonic g'\harmonic>1\pp~  | <c'\harmonic g'\harmonic>1~ |
   <c'\harmonic g'\harmonic>1~ |
   <c'\harmonic g'\harmonic>2.~ | <c'\harmonic g'\harmonic>2. |
-  R2.*2 |
+  R2. |
+  \tag #'part { \context CueVoice { \set instrumentCueName = "Vc." } }
+  \cueDuring #"cello" #UP {
+    R2.
+  }
   <c'\harmonic g'\harmonic>1_\semprepp~ | <c'\harmonic g'\harmonic>2.~ |
   % MS p. 2
-  <c'\harmonic g'\harmonic>2. | R1 |
+  <c'\harmonic g'\harmonic>2. |
+  \tag #'part { \context CueVoice { \set instrumentCueName = "Cl." } }
+  \cueDuring #"clarinet" #DOWN {
+    R1
+  }
   \relative d {
-    \set beatStructure = #'(4 3) d8-- ef-- g-- b-- d-- ef-- g-- |
+    d8-- ef-- g-- b-- d-- ef-- g-- |
     d'=''2~ d2.~ | d1 r4 | 
   }
   \relative f' {
@@ -45,6 +58,9 @@ violaNotes = {
       { fs2~ fs8 e\< fs g | <fs as>1~\! | \piùMosso <fs as> }
       { s1 | s1\f\> | s2.\mp\> s4\p }
     >> |
+  }
+  \tag #'part { \context CueVoice { \set instrumentCueName = "Vc. pizz." } }
+  \transposedCueDuring #"cello" #DOWN c'' {
     R1 |
   }
   \relative d {
@@ -100,12 +116,20 @@ violaNotes = {
     R1.. | r2 r4 af=8(\p g) bf8.(\< af16 g8. f16 ef8. d16) |
     c=1\f~ | c4 d2\>~ d~\mf | d\> cs4 d |
     % MS p. 10
-    ef8\p r r4 r2 r | R1 |
+    ef8\p r r4 r2 r |
+  }
+  \tag #'part { \context CueVoice { \set instrumentCueName = "Fl." } }
+  \transposedCueDuring #"flute" #UP c {
+    R1 |
   }
   \relative c' {
     \harmonicsOn
     <c g'>1\pp~ | q1..~ | q1~ q8 r r4 r |
-    R2.*3 |
+    R2.*2 |
+  }
+  \tag #'part { \context CueVoice { \set instrumentCueName = "Vc." } }
+  \transposedCueDuring #"cello" #DOWN c'' {
+    R2.
   }
   \relative d' {
     \harmonicsOff
@@ -118,3 +142,5 @@ violaNotes = {
     << {<c g'>1\fermata^\senzaSord} {s2.\> s4\!} >> \bar "|."
   }
 }
+
+\addQuote "viola" \violaNotes

@@ -19,12 +19,12 @@
 
 
 % Include notes files for the various parts
-\include "flute.ily"
-\include "clarinet.ily"
-\include "violin.ily"
-\include "viola.ily"
-\include "cello.ily"
-\include "harp.ily"
+\includeOnce "flute.ily"
+\includeOnce "clarinet.ily"
+\includeOnce "violin.ily"
+\includeOnce "viola.ily"
+\includeOnce "cello.ily"
+\includeOnce "harp.ily"
 
 #(set-global-staff-size 18)
 
@@ -95,19 +95,23 @@ staffHarp = \new PianoStaff \with {
   >>
 }
 
-basicScore = <<
-  \accidentalStyle #'Score "modern"
-  \new StaffGroup <<
-    \staffFlute
-    \staffClarinet
-  >>
-  \new StaffGroup <<
-    \staffViolin
-    \staffViola
-    \staffCello
-  >>
-  \staffHarp
->>
+basicScore = \removeWithTag #'part {
+  \killCues {
+    <<
+      \accidentalStyle #'Score "modern"
+      \new StaffGroup <<
+        \staffFlute
+        \staffClarinet
+      >>
+      \new StaffGroup <<
+        \staffViolin
+        \staffViola
+        \staffCello
+      >>
+      \staffHarp
+    >>
+  }
+}
 
 
 \score {

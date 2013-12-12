@@ -2,6 +2,8 @@
 
 \language "english"
 
+\include "include_once.ily"
+
 \header {
   title = "Fantasy on Southwestern Folk Songs" 
   date = "September 2010"
@@ -48,21 +50,21 @@ tempoMeter = {
   % p. 2 (m. 11)
   \time 4/4
   s1 |
-  \set Timing.beatStructure = #'(4 3)
   \time 7/8
+  \set Timing.beatStructure = #'(4 3)
   s8*7 |
   \time 5/4
   s4*5*2 |
   \time 3/4
   s2.*3 |
   % p. 3 (m. 18)
-  \set Timing.beatStructure = #'(2 2 3)
   \time 7/8
+  \set Timing.beatStructure = #'(2 2 3)
   s8*7 |
   \time 4/4
   s1 |
-  \set Timing.beatStructure = #'(2 2 3)
   \time 7/8
+  \set Timing.beatStructure = #'(2 2 3)
   s8*7 |
   \time 4/4
   s1*2 |
@@ -86,11 +88,8 @@ tempoMeter = {
   \time 3/2
   s1. \bar "||"
   \time 7/4
-  s4*7*2 |
-  % p. 6 (m. 38)
-  s4*7*8 |
-  % p. 8 (m. 46)
-  s4*7 |
+  s4*7*11 |
+  % p. 8 (m. 47)
   \accel
   \time 3/2
   s1. \bar "||"
@@ -121,8 +120,8 @@ tempoMeter = {
   s1 |
   \time 3/4
   s2. |
-  \set Timing.beatStructure = #'(2 2 3)
   \time 7/8
+  \set Timing.beatStructure = #'(2 2 3)
   s8*7 |
   % p. 13 (m. 64)
   \time 3/4
@@ -131,8 +130,8 @@ tempoMeter = {
   s1 |
   \time 3/4
   s2. |
-  \set Timing.beatStructure = #'(2 2 3)
   \time 7/8
+  \set Timing.beatStructure = #'(2 2 3)
   s8*7 |
   % p. 14 (m. 68)
   \time 4/4

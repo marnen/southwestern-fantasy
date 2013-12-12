@@ -1,5 +1,10 @@
 \version "2.16.0"
 
+\include "globals.ily"
+\includeOnce "cello.ily"
+\includeOnce "clarinet.ily"
+\includeOnce "flute.ily"
+
 instrumentName = "Violin"
 
 violinNotes = {
@@ -8,9 +13,18 @@ violinNotes = {
   \relative d''' {
     % MS p. 1
     d1:32\pp | d: | d: | | d2.: |
-    d | R2.*2 | d1:_\semprepp | d2.: |
+    d | R2. |
+    \tag #'part { \context CueVoice { \set instrumentCueName = "Vc." } }
+    \cueDuring #"cello" #DOWN {
+      R2. |
+    }
+    d1:_\semprepp | d2.: |
     % MS p. 2
-    d2. | R1 | R1*7/8 | R1*5/4*2 |
+    d2. | R1 | R1*7/8 |
+  }
+  \tag #'part { \context CueVoice { \set instrumentCueName = "Vc." } }
+  \cueDuring #"cello" #DOWN {
+    R1*5/4*2 |
   }
   \relative g' {
     r8 gf4\p gf gf8 | r <ff bf>4 <ff bf> <ff bf>8 |
@@ -34,9 +48,13 @@ violinNotes = {
     >> |
     R1 | R1. \bar "||"
   }
+  \key fs \major
+  R1*7/4*9 | % 6 additional measures
+  \tag #'part { \context CueVoice { \set instrumentCueName = "Cl." } }
+  \cueDuring #"clarinet" #DOWN {
+    R1*7/4 |
+  }
   \relative d'' {
-    \key fs \major
-    R1*7/4*10 | % 6 additional measures
     % MS p. 6
     r4 r8 ds-.^\pizz r e-. r fs-. r g-. r4 r |
     \accel
@@ -73,12 +91,21 @@ violinNotes = {
     b2~ b8 g-- b-- c-- |
     d2.~ d4 r | R1 |
     % MS p. 10
-    R1. | R1
+    R1. |
+  }
+  \tag #'part { \context CueVoice { \set instrumentCueName = "Fl." } }
+  \cueDuring #"flute" #UP {
+    R1 |
   }
   \relative d''' {
     d1:32\pp | d1..: | d1: d8.( c16 b8. a16 g8. ef16 ) |
-    d8 r r4 r | R2.*2 |
+    d8 r r4 r | R2. |
   }
+  \tag #'part { \context CueVoice { \set instrumentCueName = "Vc." } }
+  \transposedCueDuring #"cello" #DOWN c'' {
+    R2. |
+  }
+
   \relative g' {
     r2 r4 g8^\conSord g |
     g4. ef8 g a | b2 g8 g | af4. f8 <f bf> <f a> |
