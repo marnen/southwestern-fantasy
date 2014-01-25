@@ -322,7 +322,7 @@ harpNotesLeft = {
     r8 <ef g b>8 <f a c>4 r |
   }
   \relative d''' {
-    r4 r8 d32 b g ef r8 \clef bass d,32 b g e d=4 |
+    r4 r8 d32 b g ef r8 \clef bass d,32 b g ef d=4 |
   }
   \relative e, {
     \clef bass ef32 g b ef r8 ef32 g b ef r8 \clef treble ef32 g b ef r8 |
