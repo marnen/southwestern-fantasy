@@ -219,7 +219,7 @@ harpNotesLeft = {
   \relative c, {
     \clef bass <cs cs'>2.~ | <cs cs'>1 | 
   }
-  \tag #'part { \context CueVoice { \set instrumentCueName = "Vc." } }
+  \tag #'part { \context CueVoice { \set instrumentCueName = "Vc. pizz." } }
   \cueDuring #"cello" #DOWN {
     R1
   }
