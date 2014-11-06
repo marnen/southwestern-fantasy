@@ -1,5 +1,5 @@
 % Created on Wed Sep 22 15:55:48 EDT 2010
-\version "2.16.0"
+\version "2.18.0"
 
 \language "english"
 
@@ -89,7 +89,7 @@ staffHarp = \new PianoStaff \with {
 basicScore = \removeWithTag #'part {
   \killCues {
     <<
-      \accidentalStyle #'Score "modern"
+      \accidentalStyle Score.modern
       \new StaffGroup <<
         \staffFlute
         \staffClarinet
@@ -125,7 +125,7 @@ basicScore = \removeWithTag #'part {
     \context {
       \Staff
       extraNatural = ##f
-      \override TimeSignature #'style = #'numbered
+      \override TimeSignature.style = #'numbered
     }
   }
 }

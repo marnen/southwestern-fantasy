@@ -1,4 +1,4 @@
-\version "2.16.0"
+\version "2.18.0"
 
 \language "english"
 
@@ -26,8 +26,8 @@ tempoIo = {
 }
 
 moreBreaks = {
-  \override Beam #'breakable = ##t
-  \override Glissando #'breakable = ##t
+  \override Beam.breakable = ##t
+  \override Glissando.breakable = ##t
 }
 
 tempoMeter = {
@@ -159,7 +159,7 @@ tempoMeter = {
   s1*4 \bar "|."
 }
 
-crossStaffBracket = \once \override PianoStaff.Arpeggio #'stencil = #ly:arpeggio::brew-chord-bracket
+crossStaffBracket = \once \override PianoStaff.Arpeggio.stencil = #ly:arpeggio::brew-chord-bracket
 #(
   define-markup-command (pedalChange layout props pedaling) (markup-list?)
   (interpret-markup layout props

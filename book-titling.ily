@@ -1,4 +1,4 @@
-\version "2.16.0"
+\version "2.18.0"
 
 %%% book-titling.ily  -- a titling stylesheet for use in books
 %%% 
@@ -118,20 +118,20 @@
 %%%
 \paper {
   bookTitleMarkup = \markup \when-property #'header:title \column {
-    \vspace #6
+    \combine \null \vspace #6
     \fill-line { \fontsize #8 \italic \fromproperty #'header:composer }
-    \vspace #1
+    \combine \null \vspace #1
     \fill-line { \fontsize #8 \italic \fromproperty #'header:poet }
-    \vspace #6
+    \combine \null \vspace #6
     \fill-line { \fontsize #10 \fromproperty #'header:title }
-    \vspace #6
+    \combine \null \vspace #6
     \fill-line { \postscript #"-20 0 moveto 40 0 rlineto stroke" }
-    \vspace #6
+    \combine \null \vspace #6
     \fill-line { \fontsize #5 \fromproperty #'header:date }
-    \vspace #1 
+    \combine \null \vspace #1 
     \fill-line {
       \when-property #'header:arrangement \column {
-        \vspace #5
+        \combine \null \vspace #5
         \fill-line { \fontsize #3 \fromproperty #'header:arrangement }
       }
     }
@@ -151,9 +151,9 @@
                                       default))))
 \paper {
   tocTitleMarkup = \markup \column {
-    \vspace #2
+    \combine \null \vspace #2
     \fontsize #6 \fill-line { \paper-prop #'tocTitle "TABLE OF CONTENTS" }
-    \vspace #2
+    \combine \null \vspace #2
   }
   tocPieceMarkup = \markup \fill-line {
     \line-width-ratio #0.7 \fill-line {
@@ -165,9 +165,9 @@
     \fill-line { \fromproperty #'toc:text }
   }
   tocChapterMarkup = \markup \large \italic \column {
-    \vspace #1
+    \combine \null \vspace #1
     \fontsize #2 \fill-line { \fromproperty #'toc:text }
-    \vspace #1
+    \combine \null \vspace #1
   }
 }
 

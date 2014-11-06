@@ -1,4 +1,4 @@
-\version "2.16.0"
+\version "2.18.0"
 
 \include "globals.ily"
 \includeOnce "cello.ily"
@@ -111,6 +111,6 @@ violinNotes = {
     g4. ef8 g a | b2 g8 g | af4. f8 <f bf> <f a> |
     g8-- g2..~ | g1~ | g2 r |
   }
-  \override Hairpin #'circled-tip = ##t
+  \override Hairpin.circled-tip = ##t
   << {d'''1:-\fermata^\senzaSord} {s2.\> s4\!} >> \bar "|."
 }

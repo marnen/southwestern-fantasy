@@ -1,4 +1,4 @@
-\version "2.16.0"
+\version "2.18.0"
 
 \include "globals.ily"
 \includeOnce "clarinet.ily"
@@ -75,7 +75,7 @@ celloNotes = {
     r c'-.( b-. b,-.) r ef'-.( df-. df,-.)
   }
   \relative d' {
-    r8 \clef treble d! \noBeam \times 4/7 { c16(\< d ef fs g a b) } |
+    r8 \clef treble d! \noBeam \tuplet 7/4 { c16(\< d ef fs g a b) } |
     
     \tempoIo
     \key g \major

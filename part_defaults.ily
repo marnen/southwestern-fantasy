@@ -1,3 +1,5 @@
+\version "2.18.0"
+
 \include "header.ily"
 
 \header {
@@ -6,8 +8,8 @@
 }
 
 partDefaults = {
-  \accidentalStyle "modern"
-  \override MultiMeasureRest #'expand-limit = 8
+  \accidentalStyle modern
+  \override MultiMeasureRest.expand-limit = 8
   \compressFullBarRests
   \numericTimeSignature
   \moreBreaks

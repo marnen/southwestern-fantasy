@@ -1,4 +1,4 @@
-\version "2.16.0"
+\version "2.18.0"
 
 \include "globals.ily"
 \includeOnce "cello.ily"
@@ -114,7 +114,7 @@ fluteNotes = {
   \relative d''' {
     r4 \grace { d16[( g] } ef8-.) d-. r d,-. ef-. r | R1 | 
   }
-  \override Hairpin #'circled-tip = ##t
+  \override Hairpin.circled-tip = ##t
   << {d''\fermata} {s2.\> s4\!} >> \bar "|."
 }
 

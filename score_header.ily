@@ -1,3 +1,5 @@
+\version "2.18.0"
+
 \includeOnce "book-titling.ily"
 \includeOnce "header.ily"
 

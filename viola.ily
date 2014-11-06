@@ -1,4 +1,4 @@
-\version "2.16.0"
+\version "2.18.0"
 
 \include "globals.ily"
 \includeOnce "cello.ily"
@@ -137,7 +137,7 @@ violaNotes = {
     q4. <b g'>8 <d b'> <ef c'> | <d d'>2 <d b'>8 q |
     <ef c'>4. <c a'!>8 <ef d'> <ef c'> |
     <d b'>8-- q2..~ | q1~ | q2 r |
-    \override Hairpin #'circled-tip = ##t
+    \override Hairpin.circled-tip = ##t
     \harmonicsOn
     << {<c g'>1\fermata^\senzaSord} {s2.\> s4\!} >> \bar "|."
   }

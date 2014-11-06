@@ -1,4 +1,4 @@
-\version "2.16.0"
+\version "2.18.0"
 
 \include "globals.ily"
 \includeOnce "cello.ily"
@@ -236,7 +236,7 @@ harpNotesLeft = {
   % now in middle of 3/2 measure!
   \relative d, {
     r8 d cs2
-    -\tweak #'breakable ##f % this one doesn't want to slope the right way when broken 
+    -\tweak breakable ##f % this one doesn't want to slope the right way when broken 
     \glissando \bar "||"
   }
   
@@ -284,7 +284,7 @@ harpNotesLeft = {
   \relative c, {
     \clef bass <c c'>2. | r4 <d, d'>8 <d' d'> <d' d'>2 |
     r4 d,=,2
-    -\tweak #'breakable ##f % this one doesn't want to slope the right way when broken 
+    -\tweak breakable ##f % this one doesn't want to slope the right way when broken 
     \glissando |
   }
   <<
