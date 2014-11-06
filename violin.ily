@@ -12,7 +12,7 @@ violinNotes = {
   
   \relative d''' {
     % MS p. 1
-    d1:32\pp | d: | d: | | d2.: |
+    d1:32\pp | d: | d: | d2.: |
     d | R2. |
     \tag #'part { \context CueVoice { \set instrumentCueName = "Vc." } }
     \cueDuring #"cello" #DOWN {
