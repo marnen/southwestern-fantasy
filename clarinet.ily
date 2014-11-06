@@ -136,7 +136,7 @@ clarinetNotes = {
   }
   \relative d' {
     d8.( c16 b8. a16 g8. ef16) | d8 r r4 r | R1 | R2.*3 |
-    R1*3 | r1\fermata \bar "|."
+    R1*3 | R1\fermataMarkup \bar "|."
   }
 }
 

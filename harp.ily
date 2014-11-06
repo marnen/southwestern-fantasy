@@ -358,7 +358,7 @@ harpNotesLeft = {
   \relative d, {
     % MS p. 11
     \clef bass <d d,>1^\ppp\laissezVibrer | R2.*3 |
-    r4 <d d,>2 <g g,>4~ | q4 <d d,>2 <g g,>4~ | q4 <d d,>2 <g g,>4 | R1\fermata \bar "|."
+    r4 <d d,>2 <g g,>4~ | q4 <d d,>2 <g g,>4~ | q4 <d d,>2 <g g,>4 | R1\fermataMarkup \bar "|."
   }
 }
 

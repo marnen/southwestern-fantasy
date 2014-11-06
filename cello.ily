@@ -105,7 +105,7 @@ celloNotes = {
     % MS p. 11
     d,=8.(\pp c16 b8. a16 g8. ef16) |
     d=,1~ | d2.~ | d2.~ |d2.~ |
-    d1~ | d1~ | d1 | r1\fermata \bar "|."
+    d1~ | d1~ | d1 | R1^\fermataMarkup \bar "|."
   }
 }
 
