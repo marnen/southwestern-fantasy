@@ -7,8 +7,9 @@
   composer = \markup {
     \center-column {
       "Marnen E. Laibow-Koser"
-      "48 Victoria Street"
-      "Somerville, MA 02144"
+      "38 Germain Avenue, 1st floor"
+      "Quincy, MA 02169"
       "marnen@marnen.org • (845) 625-7801"
+      "http://www.marnen.org"
     }
   }
